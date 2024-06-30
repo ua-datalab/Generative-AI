@@ -1,5 +1,5 @@
-# LLM-Models
+# Generative AI
 
-All about LLM models and applications
+All about Generative AI models and their applications
 
 Documents in Wiki!
