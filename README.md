@@ -1,5 +1,72 @@
-# Generative AI
+# Generative AI: A Creative Force
 
-All about Generative AI models and their applications
+Generative AI is a subset of artificial intelligence that focuses on creating new content. Unlike traditional AI models that analyze data, generative AI models learn patterns from existing data and generate new, original content. This can range from text, images, music, and even code.
 
-Documents in Wiki!
+**Why Learn About Generative AI?**
+
+Understanding generative AI is crucial for several reasons:
+
+* Innovation: It's driving groundbreaking advancements in various industries, from art and design to healthcare and science.
+* Career Opportunities: The demand for professionals skilled in generative AI is rapidly growing, presenting exciting career prospects.
+* Problem-Solving: Generative AI offers innovative solutions to complex challenges, from content creation to drug discovery.
+* Ethical Considerations: As generative AI becomes more powerful, it's essential to understand its potential impacts and ethical implications.
+
+**Applications of Generative AI**
+
+The applications of generative AI are vast and expanding rapidly. Some key areas include:
+
+* Content Creation: Generating text, images, music, and videos.
+Drug Discovery: Accelerating the development of new drugs by designing potential molecules.
+* Design: Creating innovative designs for products and architecture.
+* Customer Service: Developing advanced chatbots and virtual assistants.
+* Education: Personalized learning experiences and intelligent tutoring systems.
+
+**Hugging Face: A Hub for Generative AI**
+
+Hugging Face has become a central platform for the generative AI community. It provides:
+
+* Pre-trained models: A vast library of pre-trained models for various tasks, making it easier to get started.
+* Datasets: Access to high-quality datasets for training and evaluation.
+Community: A thriving community of AI enthusiasts and researchers.
+* Tools: A platform for building and sharing generative AI applications.
+
+By capitalizing on Hugging Face, developers and researchers can accelerate their work in generative AI and build upon the collective knowledge of the community.
+
+***
+
+**Instructors**: Enrique Noriega / Mithun Paul / Carlos Lizárraga. 
+
+**Location**: Albert B. Weaver Science-Engineering Library. Room 212.
+
+**When**: Thursdays at 2PM.
+
+[Program not definitive!]
+
+**Calendar**
+
+
+| Date      | Title      | Topic Description     | Wiki       |
+| ------------- | ------------- | -------------      | -------------      |
+| 09/05/2024 2PM | Hugging Face Models (NLP) | Hugging Face offers a vast array of pre-trained models for Natural Language Processing (NLP) tasks. These models cover a wide spectrum of applications, from text generation and translation to sentiment analysis and question answering. |  |
+| 09/12/2024 2PM | Hugging Face Models (Computer Vision)| Hugging Face has significantly expanded its offerings beyond NLP to encompass a robust collection of computer vision models. You can find pre-trained models for a wide range of tasks, from basic image classification to complex image generation. |  |
+| 09/19/2024 2PM | Hugging Face Models (Multimodal)|  Hugging Face offers a diverse range of multimodal models, capable of processing and understanding multiple data modalities such as text, images, and audio. These models are at the forefront of AI research and development, enabling innovative applications. |  |
+| 09/26/2024 2PM | Running LLM locally: Ollama  | Ollama is an open-source platform designed to make running large language models (LLMs) on your local machine accessible and efficient. It acts as a bridge between the complex world of LLMs and users who want to experiment and interact with these models without relying on cloud-based services. |  |
+| 10/03/2024 2PM |  Introduction to LangChain | Langchain is an open-source Python library that provides a framework for developing applications powered by large language models (LLMs). It simplifies the process of building complex LLM-based applications by offering tools and abstractions to connect LLMs with other data sources and systems. |  |
+| 10/10/2024 2PM | Getting Started with Phi-3 | Phi-3 is a series of small language models (SLMs) developed by Microsoft. Unlike larger language models (LLMs) that require substantial computational resources, Phi-3 models offer impressive performance while being significantly smaller and more efficient. |  |
+| 10/17/2024 2PM | Getting started with Gemini  | Gemini is a large language model (LLM) developed by Google AI. It's designed to be exceptionally versatile, capable of handling a wide range of tasks and modalities, including text, code, audio, and images. This makes it a significant advancement in the field of artificial intelligence. |  |
+| 10/24/2024 2PM | Introduction to Gradio | Gradio is an open-source Python library that allows you to quickly create user interfaces for your machine learning models, APIs, or any Python function. It simplifies the process of building interactive demos and web applications without requiring extensive knowledge of JavaScript, CSS, or web development. |  |
+| 10/31/2024 2PM | Introduction to RAG | Retrieval-Augmented Generation. It's a technique that enhances the capabilities of Large Language Models (LLMs) by combining them with external knowledge sources. |  |
+
+***
+
+Created: 07/18/2024 (C. Lizárraga)
+
+Updated: 07/19/2024 (C. Lizárraga)
+
+[DataLab](https://www.datascience.arizona.edu/education/uarizona-data-lab), Data Science Institute,
+University of Arizona. 
+
+
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128">  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+[<img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29.svg" width="256">](https://datascience.arizona.edu)
