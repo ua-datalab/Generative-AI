@@ -50,7 +50,7 @@ Creates complex workflows: Builds intricate pipelines for tasks like summarizati
 
 **RAG: The Knowledge Booster**
 
-*Enhances LLM knowledge: Provides access to external information sources.
+* Enhances LLM knowledge: Provides access to external information sources.
 * Improves accuracy and relevance: Ensures LLM responses are grounded in factual data.
 * Expands LLM capabilities: Enables the LLM to handle more complex and informative tasks.
 
