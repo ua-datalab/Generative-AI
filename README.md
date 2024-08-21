@@ -1,6 +1,7 @@
 <img src="https://camo.githubusercontent.com/cbb623400190b0f6ec42c3decd61829324f087d0b5ad1e7d895db82083648672/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313637373434323133363031392d3231373830656361643939353f713d383026773d31363332266175746f3d666f726d6174266669743d63726f702669786c69623d72622d342e302e3326697869643d4d3377784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878386641253344253344" width=840>
 
-# Generative AI: A Creative Force
+<!-- # Generative AI: A Creative Force -->
+# Exploring the LLM Frontier: From Hugging Face to RAG and Beyond
 
 Generative AI is a subset of artificial intelligence that focuses on creating new content. Unlike traditional AI models that analyze data, generative AI models learn patterns from existing data and generate new, original content. This can range from text, images, music, and even code.
 
