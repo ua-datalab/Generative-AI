@@ -70,7 +70,7 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 
 ***
 
-**Instructors**: Carlos Lizárraga / Enrique Noriega / Mithun Paul. 
+**Instructors**: Carlos Lizárraga / Enrique Noriega. 
 
 **Location**: Albert B. Weaver Science-Engineering Library. Room 212.
 
