@@ -86,7 +86,7 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 | 09/05/2024 2PM | [Hugging Face Models (NLP)](https://github.com/ua-datalab/Generative-AI/wiki/NLP-with-Hugging-Face-Transformers) | Hugging Face offers a vast array of pre-trained models for Natural Language Processing (NLP) tasks. These models cover a wide spectrum of applications, from text generation and translation to sentiment analysis and question answering. |  |
 | 09/12/2024 2PM | [Hugging Face Models (Computer Vision)](https://github.com/ua-datalab/Generative-AI/wiki/Computer-Vision-with-Hugging-Face-Transformers)| Hugging Face has significantly expanded its offerings beyond NLP to encompass a robust collection of computer vision models. You can find pre-trained models for a wide range of tasks, from basic image classification to complex image generation. |  |
 | 09/19/2024 2PM | [Hugging Face Models (Multimodal)](https://github.com/ua-datalab/Generative-AI/wiki/Multimodal-LLM-with-Hugging-Face-Transformers)|  Hugging Face offers a diverse range of multimodal models, capable of processing and understanding multiple data modalities such as text, images, and audio. These models are at the forefront of AI research and development, enabling innovative applications. |  |
-| 09/26/2024 2PM | Running LLM locally: Ollama  | Ollama is an open-source platform designed to make running large language models (LLMs) on your local machine accessible and efficient. It acts as a bridge between the complex world of LLMs and users who want to experiment and interact with these models without relying on cloud-based services. |  |
+| 09/26/2024 2PM | [Running LLM locally: Ollama](https://github.com/ua-datalab/Generative-AI/wiki/Running-LLM-Locally:-Ollama)  | Ollama is an open-source platform designed to make running large language models (LLMs) on your local machine accessible and efficient. It acts as a bridge between the complex world of LLMs and users who want to experiment and interact with these models without relying on cloud-based services. |  |
 | 10/03/2024 2PM |  Introduction to LangChain | Langchain is an open-source Python library that provides a framework for developing applications powered by large language models (LLMs). It simplifies the process of building complex LLM-based applications by offering tools and abstractions to connect LLMs with other data sources and systems. |  |
 | 10/10/2024 2PM | Getting Started with Phi-3 | Phi-3 is a series of small language models (SLMs) developed by Microsoft. Unlike larger language models (LLMs) that require substantial computational resources, Phi-3 models offer impressive performance while being significantly smaller and more efficient. |  |
 | 10/17/2024 2PM | Getting started with Gemini  | Gemini is a large language model (LLM) developed by Google AI. It's designed to be exceptionally versatile, capable of handling a wide range of tasks and modalities, including text, code, audio, and images. This makes it a significant advancement in the field of artificial intelligence. |  |
@@ -97,7 +97,7 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 
 Created: 07/18/2024 (C. Lizárraga)
 
-Updated: 07/19/2024 (C. Lizárraga)
+Updated: 09/22/2024 (C. Lizárraga)
 
 [DataLab](https://www.datascience.arizona.edu/education/uarizona-data-lab), Data Science Institute,
 University of Arizona. 
