@@ -72,7 +72,7 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 
 **Instructors**: Carlos Lizárraga / Enrique Noriega. 
 
-**Location**: Albert B. Weaver Science-Engineering Library. Room 212.
+**Location**: Albert B. Weaver Science-Engineering Library. Room 212 and/or Zoom [874 3375 8439](https://arizona.zoom.us/s/87433758439)
 
 **When**: Thursdays at 2PM.
 
