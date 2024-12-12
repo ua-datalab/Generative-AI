@@ -70,18 +70,19 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 
 ***
 
-**Instructors**: Carlos Lizárraga / Enrique Noriega. 
+**Instructors**: Carlos Lizárraga / Nick Eddy 
 
 **Location**: Albert B. Weaver Science-Engineering Library. Room 212 and
 
-**Zoom**: [874 3375 8439](https://arizona.zoom.us/s/87433758439)
+**Zoom**: 
 
-**When**: Thursdays at 2PM.
+**When**: Tuesdays at 1PM.
 
 [Program not definitive!]
 
 **Calendar**
 
+# Fall 2024
 
 | Date      | Title      | Topic Description     | Wiki       |
 | ------------- | ------------- | -------------      | -------------      |
@@ -94,6 +95,26 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 | 10/17/2024 2PM | [Getting started with Gemini](https://github.com/ua-datalab/Generative-AI/wiki/Getting-started-with-Gemini)  | Gemini is a large language model (LLM) developed by Google AI. It's designed to be exceptionally versatile, capable of handling a wide range of tasks and modalities, including text, code, audio, and images. This makes it a significant advancement in the field of artificial intelligence. |  |
 | 10/24/2024 2PM | Introduction to Gradio | Gradio is an open-source Python library that allows you to quickly create user interfaces for your machine learning models, APIs, or any Python function. It simplifies the process of building interactive demos and web applications without requiring extensive knowledge of JavaScript, CSS, or web development. |  |
 | 10/31/2024 2PM | Introduction to RAG | Retrieval-Augmented Generation. It's a technique that enhances the capabilities of Large Language Models (LLMs) by combining them with external knowledge sources. |  |
+
+
+***
+
+### Spring 2025
+
+| Date      | Title      | Topic Description     | Wiki       |
+| ------------- | ------------- | -------------      | -------------      |
+|  01/28/2025 |  |  |  |
+| 02/04/2025 |  |  |  |
+|  02/11/2025|  |  |  |
+| 02/18/2025 |  |  |  |
+| 02/25/2025 |  |  |  |
+| 03/04/2025 |  |  |  |
+| 03/11/2025  | NO Session | Spring Break |  |
+| 03/18/2025 |  |  |  |
+| 03/25/2025 |  |  |  |
+|  |  |  |  |
+
+
 
 ***
 
