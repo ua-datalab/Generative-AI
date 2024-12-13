@@ -70,18 +70,19 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 
 ***
 
-**Instructors**: Carlos Lizárraga / Nick Eddy 
+**Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega
 
-**Location**: Albert B. Weaver Science-Engineering Library. Room 212 and
+**Location**: Albert B. Weaver Science-Engineering Library. Room 212 
 
 **Zoom**: 
 
-**When**: Tuesdays at 1PM.
+**When**: Thursdays at 1PM.
 
 [Program not definitive!]
 
 **Calendar**
 
+<!--
 # Fall 2024
 
 | Date      | Title      | Topic Description     | Wiki       |
@@ -93,32 +94,31 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 | 10/03/2024 2PM |  [Introduction to LangChain](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-Langchain) | Langchain is an open-source Python library that provides a framework for developing applications powered by large language models (LLMs). It simplifies the process of building complex LLM-based applications by offering tools and abstractions to connect LLMs with other data sources and systems. |  |
 | 10/10/2024 2PM | [Getting Started with Phi-3](https://github.com/ua-datalab/Generative-AI/wiki/Getting-started-with-Phi%E2%80%903) | Phi-3 is a series of small language models (SLMs) developed by Microsoft. Unlike larger language models (LLMs) that require substantial computational resources, Phi-3 models offer impressive performance while being significantly smaller and more efficient. |  |
 | 10/17/2024 2PM | [Getting started with Gemini](https://github.com/ua-datalab/Generative-AI/wiki/Getting-started-with-Gemini)  | Gemini is a large language model (LLM) developed by Google AI. It's designed to be exceptionally versatile, capable of handling a wide range of tasks and modalities, including text, code, audio, and images. This makes it a significant advancement in the field of artificial intelligence. |  |
-| 10/24/2024 2PM | Introduction to Gradio | Gradio is an open-source Python library that allows you to quickly create user interfaces for your machine learning models, APIs, or any Python function. It simplifies the process of building interactive demos and web applications without requiring extensive knowledge of JavaScript, CSS, or web development. |  |
-| 10/31/2024 2PM | Introduction to RAG | Retrieval-Augmented Generation. It's a technique that enhances the capabilities of Large Language Models (LLMs) by combining them with external knowledge sources. |  |
+| 10/24/2024 2PM | [Introduction to Gradio](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-Gradio) | Gradio is an open-source Python library that allows you to quickly create user interfaces for your machine learning models, APIs, or any Python function. It simplifies the process of building interactive demos and web applications without requiring extensive knowledge of JavaScript, CSS, or web development. |  |
+| 10/31/2024 2PM | [Introduction to RAG](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-Gradio) | Retrieval-Augmented Generation. It's a technique that enhances the capabilities of Large Language Models (LLMs) by combining them with external knowledge sources. |  |
 
-
+-->
 ***
 
 ### Spring 2025
 
 | Date      | Title      | Topic Description     | Wiki       |
 | ------------- | ------------- | -------------      | -------------      |
-|  01/28/2025 |  |  |  |
-| 02/04/2025 |  |  |  |
-|  02/11/2025|  |  |  |
-| 02/18/2025 |  |  |  |
-| 02/25/2025 |  |  |  |
-| 03/04/2025 |  |  |  |
+|  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  |
+| 02/04/2025 | Using AI Verde  |  |  |
+|  02/11/2025| Best practices of Prompt Engineering using AI Verde |  |  |
+| 02/18/2025 | Quick RAG application using AI Verde / HPC |  |  |
+| 02/25/2025 |  Multimodal Q&A+OCR in AI Verde |  |  |
+| 03/04/2025 | SQL specialized query code generation |  |  |
 | 03/11/2025  | NO Session | Spring Break |  |
-| 03/18/2025 |  |  |  |
-| 03/25/2025 |  |  |  |
-|  |  |  |  |
+| 03/18/2025 | Function calling with LLMs |  |  |
+| 03/25/2025 | Code generation assistants |  |  |
 
+***
 
 **Function calling using Gemini API** (Agents, structured output: SQL generation,.. )
 **Building agents using [LangGraph](https://www.langchain.com/langgraph)** (Llamaindex)
 **Llama multimodal** (Ollama local) - OCR
-
 **U of A Usecases:** (Real examples - Research objective) access to a v100 Jetstream - CyVerse
 * **Use Ollama across platforms**  (run locally and scale up)
 * **OCR example**
