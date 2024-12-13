@@ -1,3 +1,4 @@
+
 <img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=860>
 
 ## Workshop: Computational AI Mastery—From Local to Supercomputing
@@ -61,79 +62,6 @@ This workshop goes beyond teaching technology—it opens doors to a new era of c
 
 **Call to Action:**
 From biology to humanities, generative AI can transform your research. Join us to demystify and master computational AI at every scale.
-
-<!--  OLD Description F2024 
-<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=840>
-
-<!-- # Generative AI: A Creative Force -->
-# Exploring the LLM Frontier: From Hugging Face to RAG and Beyond
-
-Generative AI is a subset of artificial intelligence that focuses on creating new content. Unlike traditional AI models that analyze data, generative AI models learn patterns from existing data and generate new, original content. This can range from text, images, music, and even code.
-
-## Why Learn About Generative AI?
-
-Understanding generative AI is crucial for several reasons:
-
-* Innovation: It's driving groundbreaking advancements in various industries, from art and design to healthcare and science.
-* Career Opportunities: The demand for professionals skilled in generative AI is rapidly growing, presenting exciting career prospects.
-* Problem-Solving: Generative AI offers innovative solutions to complex challenges, from content creation to drug discovery.
-* Ethical Considerations: As generative AI becomes more powerful, it's essential to understand its potential impacts and ethical implications.
-
-## Applications of Generative AI
-
-The applications of generative AI are vast and expanding rapidly. Some key areas include:
-
-* Content Creation: Generating text, images, music, and videos.
-Drug Discovery: Accelerating the development of new drugs by designing potential molecules.
-* Design: Creating innovative designs for products and architecture.
-* Customer Service: Developing advanced chatbots and virtual assistants.
-* Education: Personalized learning experiences and intelligent tutoring systems.
-
-## Hugging Face: A Hub for Generative AI
-
-Hugging Face has become a central platform for the generative AI community. It provides:
-
-* Pre-trained models: A vast library of pre-trained models for various tasks, making it easier to get started.
-* Datasets: Access to high-quality datasets for training and evaluation.
-Community: A thriving community of AI enthusiasts and researchers.
-* Tools: A platform for building and sharing generative AI applications.
-
-By capitalizing on Hugging Face, developers and researchers can accelerate their work in generative AI and build upon the collective knowledge of the community.
-
-## The Power Trio: Langchain, Gradio, and RAG for LLM Applications
-
-Langchain, Gradio, and RAG form a potent combination for developing and deploying LLM applications. Each tool plays a crucial role in the process:
-
-**Langchain: The Architect**
-
-* Orchestrates LLM interactions: Connects LLMs to external data sources, databases, and APIs.
-Creates complex workflows: Builds intricate pipelines for tasks like summarization, question answering, and generation.
-* Manages prompts and responses: Handles prompt engineering and response formatting.
-
-**Gradio: The Interface Builder**
-
-* Creates user-friendly interfaces: Builds interactive demos and web applications for LLMs.
-* Visualizes outputs: Displays LLM generated text, images, or other media.
-* Facilitates user input: Allows users to interact with the LLM through various input methods.
-
-**RAG: The Knowledge Booster**
-
-* Enhances LLM knowledge: Provides access to external information sources.
-* Improves accuracy and relevance: Ensures LLM responses are grounded in factual data.
-* Expands LLM capabilities: Enables the LLM to handle more complex and informative tasks.
-
-**Combined Power**
-
-When used together, these tools enable you to:
-
-* Build sophisticated LLM applications: Create complex systems that leverage the strengths of LLMs and external data.
-* Deploy models effectively: Create user-friendly interfaces for your LLM applications.
-* Improve model performance: Enhance LLM accuracy and relevance through RAG.
-*Accelerate development: Streamline the development process with pre-built components.
-
-In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to develop and deploy cutting-edge LLM applications. They provide the foundation for building powerful, user-friendly, and informative AI systems.
-
-END OLD Description F2024  -->
 
 ***
 
