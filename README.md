@@ -124,7 +124,8 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 * **OCR example**
 * **SQL** Jake Harwood (Communications) 
 * **LLM**
-
+* **Fine Tuning. Use cases Amazon review**
+* 
   **Things you wanted to do with LLMs but you were afraid to ask.**
 
 
