@@ -114,28 +114,12 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 | 03/18/2025 | Function calling with LLMs |  |  |
 | 03/25/2025 | Code generation assistants |  |  |
 
-***
-
-**Function calling using Gemini API** (Agents, structured output: SQL generation,.. )
-**Building agents using [LangGraph](https://www.langchain.com/langgraph)** (Llamaindex)
-**Llama multimodal** (Ollama local) - OCR
-**U of A Usecases:** (Real examples - Research objective) access to a v100 Jetstream - CyVerse
-* **Use Ollama across platforms**  (run locally and scale up)
-* **OCR example**
-* **SQL** Jake Harwood (Communications) 
-* **LLM**
-* **Fine Tuning. Use cases Amazon review**
-* 
-  **Things you wanted to do with LLMs but you were afraid to ask.**
-
-
-
 
 ***
 
 Created: 07/18/2024 (C. Lizárraga)
 
-Updated: 09/22/2024 (C. Lizárraga)
+Updated: 12/13/2024 (C. Lizárraga)
 
 [DataLab](https://www.datascience.arizona.edu/education/uarizona-data-lab), Data Science Institute,
 University of Arizona. 
