@@ -115,6 +115,20 @@ In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to
 |  |  |  |  |
 
 
+**Function calling using Gemini API** (Agents, structured output: SQL generation,.. )
+**Building agents using [LangGraph](https://www.langchain.com/langgraph)** (Llamaindex)
+**Llama multimodal** (Ollama local) - OCR
+
+**U of A Usecases:** (Real examples - Research objective) access to a v100 Jetstream - CyVerse
+* **Use Ollama across platforms**  (run locally and scale up)
+* **OCR example**
+* **SQL** Jake Harwood (Communications) 
+* **LLM**
+
+  **Things you wanted to do with LLMs but you were afraid to ask.**
+
+
+
 
 ***
 
