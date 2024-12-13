@@ -1,7 +1,9 @@
 
 <img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=860>
 
-## Workshop: Computational AI Mastery—From Local to Supercomputing
+<!-- ## Workshop: Computational AI Mastery—From Local to Supercomputing -->
+
+## Workshop: Mastering GenAI Applications
 
 **Learning Objectives:**
 Enable graduate students to master generative AI across computational environments, connecting theory with practical, scalable AI skills.
