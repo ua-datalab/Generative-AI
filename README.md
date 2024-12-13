@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=1000>
+<img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=860>
 
 ## Workshop: Computational AI Mastery—From Local to Supercomputing
 
@@ -62,8 +62,7 @@ This workshop goes beyond teaching technology—it opens doors to a new era of c
 **Call to Action:**
 From biology to humanities, generative AI can transform your research. Join us to demystify and master computational AI at every scale.
 
-<!-- 
-OLD Description F2024 
+<!--  OLD Description F2024 
 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=840>
 
 <!-- # Generative AI: A Creative Force -->
@@ -134,8 +133,7 @@ When used together, these tools enable you to:
 
 In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to develop and deploy cutting-edge LLM applications. They provide the foundation for building powerful, user-friendly, and informative AI systems.
 
-END OLD Description F2024
--->
+END OLD Description F2024  -->
 
 ***
 
