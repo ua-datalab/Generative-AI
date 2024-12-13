@@ -1,3 +1,69 @@
+<img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=1000>
+
+## Workshop: Computational AI Mastery—From Local to Supercomputing
+
+**Learning Objectives:**
+Enable graduate students to master generative AI across computational environments, connecting theory with practical, scalable AI skills.
+
+**Workshop Justification:**
+Generative AI has become essential across all disciplines in today's rapidly advancing technological landscape. This workshop makes AI accessible to graduate students from diverse scientific backgrounds, regardless of their technical expertise.
+
+**Why Grad Students Need This:**
+Modern research demands technological adaptability. Generative AI represents a fundamental shift in research methodology, data analysis, and problem-solving. Through these tools, graduate students can:
+
+- Accelerate research workflows
+- Generate novel hypotheses
+- Enhance computational capabilities
+- Gain competitive advantages in academia and industry
+
+**Key Skills Developed:**
+
+1. Computational AI Infrastructure Management
+2. Advanced Prompt Engineering
+3. High-Performance Computing (HPC) Integration
+4. Multimodal AI Applications
+5. Practical AI Deployment Strategies
+6. Code Generation and Optimization
+7. Ethical AI Implementation
+
+**Technical Prerequisites:**
+
+- Basic programming knowledge (Python preferred)
+- Fundamental understanding of command-line interfaces
+- Curiosity and willingness to explore emerging technologies
+- No advanced machine learning background required
+
+**Major Advantages of Attending:**
+
+- Convert complex computational challenges into manageable solutions
+- Develop a practical toolkit for AI-enhanced research
+- Master scalable approaches from local to high-performance computing
+- Acquire interdisciplinary skills for any scientific domain
+
+**Unique Workshop Approach:**
+Unlike traditional technical training, we emphasize:
+
+- Practical, immediately applicable skills
+- Hands-on learning with real-world scenarios
+- Flexibility across scientific disciplines
+- Easy entry into AI technology
+
+**Potential Impact:**
+Participants will gain:
+
+- Confidence with AI technologies
+- Enhanced research methods
+- Competitive skills for academia and industry
+- Ability to innovate across computational domains
+
+**Vision:**
+This workshop goes beyond teaching technology—it opens doors to a new era of computational thinking. We empower the next generation of researchers to tackle complex problems with intelligent, scalable solutions.
+
+**Call to Action:**
+From biology to humanities, generative AI can transform your research. Join us to demystify and master computational AI at every scale.
+
+<!-- 
+OLD Description F2024 
 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=840>
 
 <!-- # Generative AI: A Creative Force -->
@@ -67,6 +133,9 @@ When used together, these tools enable you to:
 *Accelerate development: Streamline the development process with pre-built components.
 
 In essence, Langchain, Gradio, and RAG are essential tools for anyone looking to develop and deploy cutting-edge LLM applications. They provide the foundation for building powerful, user-friendly, and informative AI systems.
+
+END OLD Description F2024
+-->
 
 ***
 
