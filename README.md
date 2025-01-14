@@ -101,15 +101,15 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 | Date      | Title      | Topic Description     | Wiki       |
 | ------------- | ------------- | -------------      | -------------      |
-|  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  |
-| 02/04/2025 | Using AI Verde  |  |  |
-|  02/11/2025| Best practices of Prompt Engineering using AI Verde |  |  |
-| 02/18/2025 | Quick RAG application using AI Verde / HPC |  |  |
-| 02/25/2025 |  Multimodal Q&A+OCR in AI Verde |  |  |
-| 03/04/2025 | SQL specialized query code generation |  |  |
-| 03/11/2025  | NO Session | Spring Break |  |
-| 03/18/2025 | Function calling with LLMs |  |  |
-| 03/25/2025 | Code generation assistants |  |  |
+|  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  | Enrique |
+| 02/04/2025 | Using AI Verde  |  |  | Nick |
+|  02/11/2025| Best practices of Prompt Engineering using AI Verde |  |  | Nick |
+| 02/18/2025 | Quick RAG application using AI Verde / HPC |  |  | Enrique | 
+| 02/25/2025 |  Multimodal Q&A+OCR in AI Verde |  |  | Nick |
+| 03/04/2025 | SQL specialized query code generation |  |  | Enrique |
+| 03/11/2025  | **NO Session** | Spring Break |  |
+| 03/18/2025 | Function calling with LLMs |  |  | Enrique | 
+| 03/25/2025 | Code generation assistants |  |  | Nick | 
 
 
 ***
