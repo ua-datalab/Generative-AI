@@ -82,8 +82,8 @@ From biology to humanities, generative AI can transform your research. Join us t
 <!--
 # Fall 2024
 
-| Date      | Title      | Topic Description     | Wiki       |
-| ------------- | ------------- | -------------      | -------------      |
+| Date      | Title      | Topic Description     | Wiki       | Instructor | 
+|:--: | :--: | :--      | :--       | :-- |
 | 09/05/2024 2PM | [Hugging Face Models (NLP)](https://github.com/ua-datalab/Generative-AI/wiki/NLP-with-Hugging-Face-Transformers) | Hugging Face offers a vast array of pre-trained models for Natural Language Processing (NLP) tasks. These models cover a wide spectrum of applications, from text generation and translation to sentiment analysis and question answering. |  |
 | 09/12/2024 2PM | [Hugging Face Models (Computer Vision)](https://github.com/ua-datalab/Generative-AI/wiki/Computer-Vision-with-Hugging-Face-Transformers)| Hugging Face has significantly expanded its offerings beyond NLP to encompass a robust collection of computer vision models. You can find pre-trained models for a wide range of tasks, from basic image classification to complex image generation. |  |
 | 09/19/2024 2PM | [Hugging Face Models (Multimodal)](https://github.com/ua-datalab/Generative-AI/wiki/Multimodal-LLM-with-Hugging-Face-Transformers)|  Hugging Face offers a diverse range of multimodal models, capable of processing and understanding multiple data modalities such as text, images, and audio. These models are at the forefront of AI research and development, enabling innovative applications. |  |
@@ -99,7 +99,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 ### Spring 2025
 
-| Date      | Title      | Topic Description     | Wiki       |
+| Date      | Title      | Topic Description     | Wiki       | Instructor | 
 | ------------- | ------------- | -------------      | -------------      |
 |  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  | Enrique |
 | 02/04/2025 | Using AI Verde  |  |  | Nick |
