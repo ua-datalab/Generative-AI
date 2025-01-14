@@ -100,7 +100,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 ### Spring 2025
 
 | Date      | Title      | Topic Description     | Wiki       | Instructor | 
-| ------------- | ------------- | -------------      | -------------      |
+| :--: | :-- | :--      | :--:      | :--: |
 |  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  | Enrique |
 | 02/04/2025 | Using AI Verde  |  |  | Nick |
 |  02/11/2025| Best practices of Prompt Engineering using AI Verde |  |  | Nick |
