@@ -71,7 +71,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 **Location**: Albert B. Weaver Science-Engineering Library. Room 212 
 
-**Zoom**: 
+**Zoom**: [**https://arizona.zoom.us/j/89667081542**](https://arizona.zoom.us/j/89667081542)
 
 **When**: Thursdays at 1PM.
 
@@ -114,9 +114,9 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 ***
 
-Created: 07/18/2024 (C. Lizárraga)
+Created: 01/14/2025 (C. Lizárraga)
 
-Updated: 12/13/2024 (C. Lizárraga)
+Updated: 01/15/2025 (C. Lizárraga)
 
 [DataLab](https://www.datascience.arizona.edu/education/uarizona-data-lab), Data Science Institute,
 University of Arizona. 
