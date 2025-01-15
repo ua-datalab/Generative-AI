@@ -101,15 +101,15 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 | Date      | Title      | Topic Description     | Wiki       | Instructor | 
 | :--: | :-- | :--      | :--:      | :--: |
-|  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC |  |  | Enrique |
-| 02/04/2025 | Using AI Verde  |  |  | Nick |
-|  02/11/2025| Best practices of Prompt Engineering using AI Verde |  |  | Nick |
-| 02/18/2025 | Quick RAG application using AI Verde / HPC |  |  | Enrique | 
-| 02/25/2025 |  Multimodal Q&A+OCR in AI Verde |  |  | Nick |
-| 03/04/2025 | SQL specialized query code generation |  |  | Enrique |
-| 03/11/2025  | **NO Session** | Spring Break |  |
-| 03/18/2025 | Function calling with LLMs |  |  | Enrique | 
-| 03/25/2025 | Code generation assistants |  |  | Nick | 
+|  01/28/2025 | Scaling up Ollama: Local, CyVerse, HPC | In this hands-on workshop, participants will learn to deploy and scale large language models using Ollama across various computational environments—from laptops to supercomputing clusters—to master practical AI capabilities. |  | Enrique Noriega|
+| 02/04/2025 | Using AI Verde  | This practical introduction shows how to effectively use U of A Generative AI Verde for academic research, writing, and problem-solving. Participants will learn to harness AI Verde's capabilities while gaining a clear understanding of its limitations and ethical implications. |  | Nick |
+|  02/11/2025| Best practices of Prompt Engineering using AI Verde | A hands-on session that teaches practical prompt engineering techniques to optimize U of A Generative AI Verde's performance for academic and professional applications. |  | Nick Eddy |
+| 02/18/2025 | Quick RAG application using AI Verde / HPC | A hands-on session demonstrating how to build a basic Retrieval-Augmented Generation (RAG) system with the U of A Generative AI Verde API. Participants will learn to enhance AI responses by integrating custom knowledge bases. |  | Enrique Noriega | 
+| 02/25/2025 |  Multimodal Q&A+OCR in AI Verde | A hands-on technical session exploring U of A Generative AI's multimodal capabilities that combines vision and text processing for enhanced document analysis and automated question-answering with OCR technology. |  | Nick Eddy  |
+| 03/04/2025 | SQL specialized query code generation |  |  | Enrique Noriega |
+| 03/11/2025  | **NO Session** | **Spring Break** |  |
+| 03/18/2025 | Function calling with LLMs | A hands-on session teaching participants how to use Large Language Models to craft, optimize, and validate complex SQL queries, emphasizing real-world database operations and industry best practices. |  | Enrique Noriega | 
+| 03/25/2025 | Code generation assistants |  Large Language Models (LLMs) now serve as powerful code generation assistants, streamlining and enhancing software development. They generate code snippets, propose solutions, and translate code between programming languages.|  | Nick Eddy  | 
 
 
 ***
