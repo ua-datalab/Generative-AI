@@ -114,7 +114,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 ***
 
-Created: 01/14/2025 (C. Lizárraga)
+Created: 06/10/2024 (C. Lizárraga)
 
 Updated: 01/15/2025 (C. Lizárraga)
 
