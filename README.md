@@ -69,11 +69,15 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 **Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega
 
-**Location**: Albert B. Weaver Science-Engineering Library. Room 212 
+* [**Registration**](https://uarizona.co1.qualtrics.com/jfe/form/SV_8G7h2ZJvMR4lVl4)
 
-**Zoom**: [**https://arizona.zoom.us/j/89667081542**](https://arizona.zoom.us/j/89667081542)
+* **When**: Thursdays at 1PM.
 
-**When**: Thursdays at 1PM.
+* **Where**: Albert B. Weaver Science-Engineering Library. Room 212 
+
+* [**Zoom**](https://arizona.zoom.us/j/89667081542)
+
+
 
 [Program not definitive!]
 
