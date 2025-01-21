@@ -75,11 +75,10 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 * **Where**: Albert B. Weaver Science-Engineering Library. Room 212 
 
-* [**Zoom**](https://arizona.zoom.us/j/89667081542)
+* **Zoom**: [https://arizona.zoom.us/j/89667081542](https://arizona.zoom.us/j/89667081542)
 
 
-
-[Program not definitive!]
+_(Program not definitive!)_
 
 **Calendar**
 
