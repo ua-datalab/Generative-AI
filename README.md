@@ -69,7 +69,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 
 **Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega
 
-* [**Registration**](https://uarizona.co1.qualtrics.com/jfe/form/SV_8G7h2ZJvMR4lVl4)
+* [**Registration**](https://uarizona.co1.qualtrics.com/jfe/form/SV_0wWiJ946ta9ExzE) to attend in person or online.
 
 * **When**: Thursdays at 1PM.
 
