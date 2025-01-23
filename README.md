@@ -1,8 +1,142 @@
 
 <img src="https://images.unsplash.com/photo-1655720855348-a5eeeddd1bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=860>
 
+***
+
+## Mastering Generative AI Foundation Models for Research
+
+### Workshop Overview
+Dive deep into the world of generative AI foundation models, exploring their transformative potential across scientific disciplines through a hands-on, accessible approach.
+
+### Learning Objectives
+By the end of this workshop, participants will:
+
+* Develop a comprehensive understanding of generative AI foundation models
+* Acquire practical skills for integrating AI technologies into research workflows
+* Demonstrate proficiency in prompt engineering across multiple disciplines
+* Critically evaluate and apply multimodal AI tools to complex research challenges
+* Build confidence in navigating and deploying AI technologies
+* Create innovative research approaches using generative AI methodologies
+
+### Key Skills Developed
+
+#### Advanced Prompt Engineering
+
+* Crafting precise, context-specific prompts
+* Extracting maximum value from foundation models
+* Developing discipline-specific interaction strategies
+
+
+#### Computational AI Infrastructure Management
+
+* Understanding AI model architectures
+* Managing computational resources
+* Scaling AI applications from local to HPC environments
+
+
+#### Multimodal AI Applications
+
+* Integrating text, image, and data-based models
+* Cross-modal research technique development
+* Solving interdisciplinary research challenges
+
+
+#### Practical AI Deployment Strategies
+
+* Implementing AI tools in research workflows
+* Performance optimization techniques
+* Handling model limitations and biases
+
+
+#### Code Generation and Optimization
+
+* Utilizing AI for research code development
+* Debugging and improving computational methods
+* Automating repetitive research tasks
+
+
+#### Ethical AI Implementation
+
+* Recognizing and mitigating AI biases
+* Ensuring research integrity
+* Responsible AI use across disciplines
+
+
+#### High-Performance Computing (HPC) Integration
+
+* Deploying AI models in advanced computing environments
+* Resource management and optimization
+* Scaling computational research capabilities
+
+### Core Focus: Foundation Models in Research
+
+#### Understanding Foundation Models
+
+* Explore large language models and multimodal AI systems
+* Examine key models: GPT, BERT, DALL-E, Stable Diffusion
+* Analyze model architectures, capabilities, and limitations
+* Understand transfer learning and model adaptability
+
+#### Generative AI as a Research Catalyst
+
+* Bridging interdisciplinary research challenges
+* Transforming data analysis and hypothesis generation
+* Expanding computational research capabilities
+* Democratizing advanced AI technologies
+
+### Key Workshop Modules
+
+#### 1. Prompt Engineering for Research
+
+* Crafting effective prompts across disciplines
+* Extracting maximum value from foundation models
+* Developing discipline-specific interaction strategies
+* Handling complex research queries
+
+#### 2. Multimodal AI Applications
+
+* Integrating text, image, and data-based models
+* Cross-modal research techniques
+* Practical implementation strategies
+* Solving interdisciplinary research challenges
+
+#### 3. Ethical AI and Responsible Use
+
+* Understanding model biases
+* Ensuring research integrity
+* Responsible AI deployment
+* Ethical considerations in AI-assisted research
+
+#### 4. Computational Infrastructure
+
+* Local to high-performance computing deployments
+* Resource management strategies
+* Scaling AI model applications
+* Performance optimization techniques
+
+
+### Target Audience
+
+* Graduate students across all disciplines
+* Researchers seeking AI integration
+* Academics exploring computational technologies
+* Interdisciplinary innovation seekers
+
+### Learning Outcomes
+
+* Confident foundation model utilization
+* Advanced research methodology skills
+* Computational thinking transformation
+* Practical AI deployment capabilities
+
+## Workshop Vision
+Empowering researchers to leverage generative AI as a powerful, flexible research companion across scientific domains.
+
+
 <!-- ## Workshop: Computational AI Mastery—From Local to Supercomputing -->
 
+<!--
+PREVIOUS Workshop description....
 ## Workshop: Mastering GenAI Applications
 
 **Learning Objectives:**
@@ -64,7 +198,7 @@ This workshop goes beyond teaching technology—it opens doors to a new era of c
 
 **Call to Action:**
 From biology to humanities, generative AI can transform your research. Join us to demystify and master computational AI at every scale.
-
+-->
 ***
 
 **Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega
