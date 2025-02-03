@@ -201,7 +201,7 @@ From biology to humanities, generative AI can transform your research. Join us t
 -->
 ***
 
-**Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega
+**Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega/ Mithun Paul
 
 * [**Registration**](https://uarizona.co1.qualtrics.com/jfe/form/SV_0wWiJ946ta9ExzE) to attend in person or online.
 
