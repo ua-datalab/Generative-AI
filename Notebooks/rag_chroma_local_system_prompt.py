@@ -8,71 +8,9 @@ from langchain_chroma import Chroma
 # Path to the ChromaDB storage
 vdb_dir = "./pdfs"
 
-# Initialize ChromaDB client pointing to existing database
-# client = chromadb.PersistentClient(path=str(vdb_dir))
-
-# # Get the existing collection
-# collection = client.get_or_create_collection(name="pdf_index_b")
-
-
-# %%
-
 # %%
 # pip install -qU "langchain-huggingface" langchain openai langchain-openai langchain-community Langchainhub langchain_chroma chromadb PyMuPDF langchain-community
 
-# %%
-# from pathlib import Path
-# import fitz  # PyMuPDF
-# from langchain.chat_models import ChatOpenAI
-# from langchain.chains import RetrievalQA
-# from langchain.embeddings.openai import OpenAIEmbeddings
-# from langchain.vectorstores import FAISS
-# from langchain.text_splitter import CharacterTextSplitter
-# from langchain.document_loaders import TextLoader
-# from langchain.schema import Document
-
-
-# # Load and preprocess documents
-# def load_documents():
-#     raw_text = """AI is transforming various fields, including Open Science. 
-#     MLOps and LLMOps are crucial for deploying AI models effectively.
-#     Hugging Face Hub provides access to numerous open-source models."""
-    
-
-# # Path to the folder containing PDFs
-# pdf_folder = "./pdfs"
-
-# # Function to extract text from PDFs
-# def extract_text_from_pdf(pdf_path):
-#     doc = fitz.open(pdf_path)
-#     text = "\n".join([page.get_text("text") for page in doc])
-#     text_splitter = CharacterTextSplitter(chunk_size=100, chunk_overlap=20)
-#     texts = text_splitter.split_text(text)
-#     documents = [Document(page_content=t) for t in texts]
-#     return documents
-
-
-# import os
-
-
-
-# # List all files and directories in the specified directory
-
-# for pdf_file in os.listdir(pdf_folder):
-#     item_path = os.path.join(pdf_folder, pdf_file)
-#     if os.path.isfile(item_path):  # Check if it's a file
-#         print(pdf_file)
-#         document= extract_text_from_pdf(item_path)
-        
-#         if document:  # Ensure there is text to index            
-#                 collection.add(
-#                     documents=[page.page_content for page in document],
-#                     metadatas=[{"filename": pdf_file} for _ in range(len(documents))],
-#                     ids=[pdf_file.stem+f"_{ix}" for ix in range(len(documents))]
-#                 )
-#                 print(f"Indexed: {pdf_file.name}")
-
-# print("Indexing complete.")
 
 # %%
 from langchain.chat_models import ChatOpenAI
