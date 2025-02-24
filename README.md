@@ -254,7 +254,7 @@ _(Program not definitive!)_
 ****
 Created: 06/10/2024 (C. Lizárraga)
 
-Updated: 01/23/2025 (C. Lizárraga)
+Updated: 02/24/2025 (C. Lizárraga)
 
 [DataLab](https://www.datascience.arizona.edu/education/uarizona-data-lab), Data Science Institute,
 University of Arizona. 
