@@ -25,9 +25,9 @@ vdb_dir = Path() / ".." / "testing" / "data" / "RNR355"
 llm_url ='https://llm-api.cyverse.ai'
 # llm_url ='https://llm-api.cyverse.ai/v1/models'
 
-api_key = ''
+
 openai_api_key = ""
-# = os.environ.get('OPENAI_API_KEY')
+api_key = os.environ.get('OPENAI_API_KEY')
 
 
 # In[3]:
@@ -36,10 +36,10 @@ openai_api_key = ""
 from chains.llm_proxy import build_llm_proxy
 
 llm = build_llm_proxy(
-    model="gpt-4o",
+    model="anthropic/claude-3-sonnet-20240229",
     url=llm_url,
     engine="OpenAI",
-    temperature=0.9,
+    temperature=0.1,
     api_key=api_key,
 )
 
@@ -81,7 +81,7 @@ import json
 message = llm.invoke(prompt)
 
 print(message.content)
-save_code_to_file(message.content, './outputs/customer.vb')
+save_code_to_file(message.content, './outputs/colors_from_llm.vb')
 
 
 
