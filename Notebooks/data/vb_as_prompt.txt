@@ -1,7 +1,16 @@
-I am giving you two vb.net files. First file , earmarked below with "---start of actual class file for clsBuyer----"  shows a class for a buyer. The second file , earmarked below with "------start of constants and definitions file---"  shows the respective constants, its expected data types used in the buyer class. Now do the following based on the features of this class :Create a similar vb.net code but instead this time for a color class. Use the constants file as reference for defining the respective fields and is followed diligently. Also do not remove the comments given in the input file- rather replicate it as is with the required modifications. for exampleMake sure the created data field is today's date. Also make sure intendation in the output class is matched exactly like in the input class, clsBuyer, i.e use vbTab for indentation (as per the definition of tab given in vb.net coding standards)
+I am giving you two vb.net files. First file, earmarked below with "---start of actual class file for clsBuyer----"  shows a class for a buyer.  The second file , earmarked below with "------start of constants and definitions file---"  contains the  metadata of the datatypes and the syntax. Note that this is our novelty.
 
+However note that the first file which contains class defintion of clsBuyer, is slightly different than standard vb.net coding practices. For example if you look at "Public Const CmintColorUid_Length As Integer = clsGlobalEnum.enumFieldLength.eLength4"  where  eLength4 is inturn defined/taken from the second file. i.e the second file is a metadata for fields in the first file. Undertand eLength4 as length of a field with datalength 4
 
+Now do the following based on the features of this clsBuyer class :Create a similar vb.net class but instead this time for a color class. Use the second file ,earmarked below with "------start of constants and definitions file---",as reference 
 
+Extra info/bells and whistles for you to keep in mind : 
+do not remove the comments given in the input file- rather replicate it as is with the required modifications. 
+Also make sure intendation in the output class is matched exactly like in the input class, clsBuyer, i.e use vbTab for indentation (as per the definition of tab given in vb.net coding standards).
+Fields for color class are as follows
+Field name is colorUid ,  datatype is Integer, datalength 4
+Field name is colorCode . datatype is varwchar , datalength 10
+Field name is colorName . datatype is varwchar , datalength 31
 
 
 ---start of actual class file for clsBuyer----
