@@ -1,4 +1,4 @@
-Here's the VB.NET class for a color class based on the provided clsBuyer class and the metadata in the second file:
+Here's the VB.NET class for the color class, following the instructions provided:
 
 ```vb
 Public Class clsColor
@@ -80,8 +80,8 @@ Public Class clsColor
 
     'Constant for Field DataType
     Public Const CmintColorUid_DataType As clsGlobalEnum.enumDataTypes = clsGlobalEnum.enumDataTypes.eInteger
-    Public Const CmintColorCode_DataType As clsGlobalEnum.enumDataTypes = clsGlobalEnum.enumDataTypes.eVarChar
-    Public Const CmintColorName_DataType As clsGlobalEnum.enumDataTypes = clsGlobalEnum.enumDataTypes.eVarChar
+    Public Const CmintColorCode_DataType As clsGlobalEnum.enumDataTypes = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintColorName_DataType As clsGlobalEnum.enumDataTypes = clsGlobalEnum.enumDataTypes.eVarWChar
 
     '/* Constant - Friend */
     '/* Constant - Protected */
@@ -122,7 +122,7 @@ Public Class clsColor
     '/* Variable - Property - Private */
 
     ' Variable for Fields
-    Private mlngColorUid As Integer
+    Private mlngColorUid As String
     Private mstrColorCode As String
     Private mstrColorName As String
 
@@ -242,7 +242,7 @@ Public Class clsColor
 
             Select Case InintIndex
                 Case enumFieldsColor.eColorUid
-                    strReturnValue = ColorUid.ToString()
+                    strReturnValue = ColorUid
                 Case enumFieldsColor.eColorCode
                     strReturnValue = ColorCode
                 Case enumFieldsColor.eColorName
@@ -261,11 +261,11 @@ Public Class clsColor
             End Select
         End Set
     End Property
-    Public Property ColorUid() As Integer
+    Public Property ColorUid() As String
         Get
             Return mlngColorUid
         End Get
-        Set(ByVal Value As Integer)
+        Set(ByVal Value As String)
             mlngColorUid = Value
         End Set
     End Property
@@ -315,11 +315,11 @@ Public Class clsColor
         Dim ThisFunctionName As String = System.Reflection.MethodInfo.GetCurrentMethod().Name
 
         '----/* Initialize - Variables */----
-        'Local Variables
+        '--Local Variables
         ExecutionComplete = False
         Initialize = False
 
-        'Parameters
+        '--Parameters
 
         '----/* Functionality  - Start */----
         mobjSolutionBO = InobjSolutionBO
@@ -347,11 +347,11 @@ ErrorHandler:
         Dim ThisFunctionName As String = System.Reflection.MethodInfo.GetCurrentMethod().Name
 
         '----/* Initialize - Variables */----
-        'Local Variables
+        '--Local Variables
         ExecutionComplete = False
         Terminate = False
 
-        'Parameters
+        '--Parameters
 
         '----/* Functionality  - Start */----
         mobjSolutionBO = Nothing
@@ -401,14 +401,4 @@ ErrorHandler:
 #End Region
 
 End Class
-```
 
-This class follows the same structure and coding conventions as the provided `clsBuyer` class. It includes the necessary constants, enumerations, variables, properties, and functions based on the specified fields for the `clsColor` class.
-
-Note that I have made the following assumptions:
-
-1. The `ColorUid` field is of data type `Integer`.
-2. The `ColorCode` and `ColorName` fields are of data type `String` (assumed to be `VarChar` in the metadata).
-3. The `ColorUid` field is the primary key.
-
-Please review the code and make any necessary adjustments based on your requirements.

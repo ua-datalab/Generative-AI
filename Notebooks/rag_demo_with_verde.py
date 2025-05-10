@@ -37,6 +37,7 @@ from chains.llm_proxy import build_llm_proxy
 
 llm = build_llm_proxy(
     model="anthropic/claude-3-sonnet-20240229",
+    # model="anthropic/claude-3-7-sonnet-latest",
     url=llm_url,
     engine="OpenAI",
     temperature=0.1,
