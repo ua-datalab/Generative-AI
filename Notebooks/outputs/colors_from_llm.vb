@@ -1,6 +1,3 @@
-Here's the VB.NET class for the color class, following the instructions provided:
-
-```vb
 Public Class clsColor
 
 #Region "Inherits"
@@ -14,7 +11,7 @@ Public Class clsColor
 
 '* CodeFactory    Version  : CodeFactory_V_11_R_02.00.11
 '* Template Class Version  : 10 
-'* Created on              : Wednesday, 26 March, 2025 at 11:53:22 AM
+'* Created on              : Wednesday, 14 May, 2025 at 06:50:57 PM
 '************** Code Grouping Convention***********
 '*   Inherits                                     *
 '*   Implements                                   *
@@ -133,7 +130,7 @@ Public Class clsColor
     '/* Variable - General - Friend - Object */
     '/* Variable - General - Protected - Object */
     '/* Variable - General - Private - Object */
-    Private mobjSolutionBO As clsSolutionBO 'Default Design
+    Private mobjSolutionBO As clsSolutionBO'Default Design
 
     '/* Variable - General - Public */ (There should not be any public variable, create properties instead)
     '/* Variable - General - Friend */
@@ -401,4 +398,3 @@ ErrorHandler:
 #End Region
 
 End Class
-
