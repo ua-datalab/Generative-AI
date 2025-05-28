@@ -34,9 +34,9 @@ Upon completion of this eight-session workshop series, participants will be able
 
 Okay, here's a list of the session topics for the workshop "Navigating the Modern AI Landscape: RAG, Tool-Use, and Agents," with a brief description of the possible content for each:
 
----
 
 ***
+
 ## Fall 2025
 
 **Instructors**:  Nick Eddy /  Enrique Noriega/ Carlos Lizárraga 
