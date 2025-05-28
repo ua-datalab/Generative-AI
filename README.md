@@ -3,213 +3,50 @@
 
 ***
 
-## Mastering Generative AI Foundation Models for Research
+## Workshop: Navigating the Modern AI Landscape: RAG, Tool-Use, and Agents
 
-### Workshop Overview
-Dive deep into the world of generative AI foundation models, exploring their transformative potential across scientific disciplines through a hands-on, accessible approach.
+### Topic Overview
 
-### Learning Objectives
-By the end of this workshop, participants will:
+This eight-session workshop is tailored for graduate students eager to move beyond foundational AI concepts and master the practical application of modern Large Language Model (LLM) operations and agentic systems. As LLMs become increasingly integrated into research and industry, this series focuses on equipping participants with the skills to deploy, customize, and extend these powerful tools. We'll begin by exploring how to **run LLMs locally** using tools like Ollama and LM Studio, fostering hands-on experience and an understanding of resource management. The workshop will also introduce platforms like **AI VERDE**, which facilitate access to a variety of open-source LLMs within institutional or research settings.
 
-* Develop a comprehensive understanding of generative AI foundation models
-* Acquire practical skills for integrating AI technologies into research workflows
-* Demonstrate proficiency in prompt engineering across multiple disciplines
-* Critically evaluate and apply multimodal AI tools to complex research challenges
-* Build confidence in navigating and deploying AI technologies
-* Create innovative research approaches using generative AI methodologies
+A significant portion of the series is dedicated to advanced LLM applications. Participants will learn to implement **Retrieval Augmented Generation (RAG)** systems, enabling LLMs to access and utilize external, up-to-date knowledge bases, thereby reducing hallucinations and improving factual accuracy (Lewis et al., 2020). We will then explore **tool calling**, a mechanism that allows LLMs to interact with external software and APIs, and a practical application of this in **text-to-SQL code generation**.
 
-### Key Skills Developed
+The workshop culminates in an exploration of **agentic systems**, where LLMs are empowered to reason, plan, and execute multi-step tasks. We'll also touch upon emerging standards and SDKs, such as Anthropic's approaches to context management with the **Claude SDK**, and practical data integration techniques using **Google Firebase** to support AI applications. Throughout the series, interdisciplinary use-cases will be highlighted, demonstrating how these advanced AI skills can enhance research, automate complex workflows, and develop innovative solutions across diverse academic fields.
 
-#### Advanced Prompt Engineering
+**References for Overview:**
 
-* Crafting precise, context-specific prompts
-* Extracting maximum value from foundation models
-* Developing discipline-specific interaction strategies
+* Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D. (2020). [Retrieval-augmented generation for knowledge-intensive NLP tasks](https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf). *Advances in Neural Information Processing Systems*, *33*, 9459-9474. (The seminal paper on RAG).
+* Mialon, G., Dessì, R., Lomeli, M., Nalmpantis, C., Pasunuru, R., Raileanu, R., ... & Scialom, T. (2023). [Augmented Language Models: a Survey](https://arxiv.org/abs/2302.07842). *Transactions on Machine Learning Research*. (Provides a broad overview of how LLMs are augmented).
+* Norman Di Palo and Arunkumar Byravan and Leonard Hasenclever and Markus Wulfmeier and Nicolas Heess and Martin Riedmiller. [Towards A Unified Agent with Foundation Models](https://arxiv.org/abs/2307.09668). *arXiv preprint 	arXiv:2307.09668*. (Discusses concepts relevant to agentic AI).
+* Anthropic. (Various documentation on [Claude SDK](https://docs.anthropic.com/en/docs/claude-code/sdk) and context management). (Specific SDK documentation provides context for modern LLM interaction).
+* [Google Firebase](https://firebase.google.com/). (Various documentation on integrating Firebase with AI applications). (Platform documentation shows practical data backend integration).
+* Mithun, P., Noriega-Atala, E., Merchant, N., & Skidmore, E. (2025). [AI-VERDE: A Gateway for Egalitarian Access to Large Language Model-Based Resources For Educational Institutions](https://arxiv.org/abs/2502.09651). *arXiv:2502.09651* might be relevant if the workshop is targeting such a platform.)
 
+### Learning Goals
 
-#### Computational AI Infrastructure Management
+Upon completion of this eight-session workshop series, participants will be able to:
 
-* Understanding AI model architectures
-* Managing computational resources
-* Scaling AI applications from local to HPC environments
+1. **Deploy and Manage LLMs:** Gain practical experience in setting up and running Large Language Models in various environments, including local instances (e.g., Ollama, LM Studio) and accessing them through dedicated platforms (e.g., AI VERDE).
+2. **Implement Advanced LLM Augmentation:** Design and build Retrieval Augmented Generation (RAG) systems to connect LLMs with external knowledge sources, enhancing response relevance and accuracy.
+3. **Enable LLM-Powered Tool Interaction:** Develop applications where LLMs can effectively call external tools and APIs, with a specific focus on tasks like text-to-SQL generation.
+4. **Construct Basic AI Agents:** Understand the principles of agentic AI systems and build simple agents capable of planning and executing sequences of actions to achieve defined goals.
+5. **Integrate LLMs with Modern Data Ecosystems:** Learn to utilize specific SDKs (like the Claude SDK) for sophisticated context management and integrate LLM applications with backend data solutions such as Google Firebase.
 
+Okay, here's a list of the session topics for the workshop "Navigating the Modern AI Landscape: RAG, Tool-Use, and Agents," with a brief description of the possible content for each:
 
-#### Multimodal AI Applications
+---
 
-* Integrating text, image, and data-based models
-* Cross-modal research technique development
-* Solving interdisciplinary research challenges
-
-
-#### Practical AI Deployment Strategies
-
-* Implementing AI tools in research workflows
-* Performance optimization techniques
-* Handling model limitations and biases
-
-
-#### Code Generation and Optimization
-
-* Utilizing AI for research code development
-* Debugging and improving computational methods
-* Automating repetitive research tasks
-
-
-#### Ethical AI Implementation
-
-* Recognizing and mitigating AI biases
-* Ensuring research integrity
-* Responsible AI use across disciplines
-
-
-#### High-Performance Computing (HPC) Integration
-
-* Deploying AI models in advanced computing environments
-* Resource management and optimization
-* Scaling computational research capabilities
-
-### Core Focus: Foundation Models in Research
-
-#### Understanding Foundation Models
-
-* Explore large language models and multimodal AI systems
-* Examine key models: GPT, BERT, DALL-E, Stable Diffusion
-* Analyze model architectures, capabilities, and limitations
-* Understand transfer learning and model adaptability
-
-#### Generative AI as a Research Catalyst
-
-* Bridging interdisciplinary research challenges
-* Transforming data analysis and hypothesis generation
-* Expanding computational research capabilities
-* Democratizing advanced AI technologies
-
-### Key Workshop Modules
-
-#### 1. Prompt Engineering for Research
-
-* Crafting effective prompts across disciplines
-* Extracting maximum value from foundation models
-* Developing discipline-specific interaction strategies
-* Handling complex research queries
-
-#### 2. Multimodal AI Applications
-
-* Integrating text, image, and data-based models
-* Cross-modal research techniques
-* Practical implementation strategies
-* Solving interdisciplinary research challenges
-
-#### 3. Ethical AI and Responsible Use
-
-* Understanding model biases
-* Ensuring research integrity
-* Responsible AI deployment
-* Ethical considerations in AI-assisted research
-
-#### 4. Computational Infrastructure
-
-* Local to high-performance computing deployments
-* Resource management strategies
-* Scaling AI model applications
-* Performance optimization techniques
-
-
-### Target Audience
-
-* Graduate students across all disciplines
-* Researchers seeking AI integration
-* Academics exploring computational technologies
-* Interdisciplinary innovation seekers
-
-### Learning Outcomes
-
-* Confident foundation model utilization
-* Advanced research methodology skills
-* Computational thinking transformation
-* Practical AI deployment capabilities
-
-## Workshop Vision
-Empowering researchers to leverage generative AI as a powerful, flexible research companion across scientific domains.
-
-
-<!-- ## Workshop: Computational AI Mastery—From Local to Supercomputing -->
-
-<!--
-PREVIOUS Workshop description....
-## Workshop: Mastering GenAI Applications
-
-**Learning Objectives:**
-Enable graduate students to master generative AI across computational environments, connecting theory with practical, scalable AI skills.
-
-**Workshop Justification:**
-Generative AI has become essential across all disciplines in today's rapidly advancing technological landscape. This workshop makes AI accessible to graduate students from diverse scientific backgrounds, regardless of their technical expertise.
-
-**Why Grad Students Need This:**
-Modern research demands technological adaptability. Generative AI represents a fundamental shift in research methodology, data analysis, and problem-solving. Through these tools, graduate students can:
-
-- Accelerate research workflows
-- Generate novel hypotheses
-- Enhance computational capabilities
-- Gain competitive advantages in academia and industry
-
-**Key Skills Developed:**
-
-1. Computational AI Infrastructure Management
-2. Advanced Prompt Engineering
-3. High-Performance Computing (HPC) Integration
-4. Multimodal AI Applications
-5. Practical AI Deployment Strategies
-6. Code Generation and Optimization
-7. Ethical AI Implementation
-
-**Technical Prerequisites:**
-
-- Basic programming knowledge (Python preferred)
-- Fundamental understanding of command-line interfaces
-- Curiosity and willingness to explore emerging technologies
-- No advanced machine learning background required
-
-**Major Advantages of Attending:**
-
-- Convert complex computational challenges into manageable solutions
-- Develop a practical toolkit for AI-enhanced research
-- Master scalable approaches from local to high-performance computing
-- Acquire interdisciplinary skills for any scientific domain
-
-**Unique Workshop Approach:**
-Unlike traditional technical training, we emphasize:
-
-- Practical, immediately applicable skills
-- Hands-on learning with real-world scenarios
-- Flexibility across scientific disciplines
-- Easy entry into AI technology
-
-**Potential Impact:**
-Participants will gain:
-
-- Confidence with AI technologies
-- Enhanced research methods
-- Competitive skills for academia and industry
-- Ability to innovate across computational domains
-
-**Vision:**
-This workshop goes beyond teaching technology—it opens doors to a new era of computational thinking. We empower the next generation of researchers to tackle complex problems with intelligent, scalable solutions.
-
-**Call to Action:**
-From biology to humanities, generative AI can transform your research. Join us to demystify and master computational AI at every scale.
--->
 ***
 
-**Instructors**:  Nick Eddy / Carlos Lizárraga / Enrique Noriega/ Mithun Paul
+**Instructors**:  Nick Eddy /  Enrique Noriega/ Carlos Lizárraga 
 
-* [**Registration**](https://uarizona.co1.qualtrics.com/jfe/form/SV_0wWiJ946ta9ExzE) to attend in person or online.
+* [**Registration**]() to attend in person or online.
 
 * **When**: Thursdays at 1PM.
 
 * **Where**: Albert B. Weaver Science-Engineering Library. Room 212 
 
-* **Zoom**: [https://arizona.zoom.us/j/89667081542](https://arizona.zoom.us/j/89667081542)
+* **Zoom**: (?)
 
 
 _(Program not definitive!)_
@@ -217,9 +54,24 @@ _(Program not definitive!)_
 **Calendar**
 
 
+## Workshop Sessions: Content Overview
+
+| Date |  Topic |  Desciption |  Materials | Code | YouTube |
+| :--: | :-- | :-- | :-- | :-- | :-- |
+|   |  **Session 1: Running LLM Locally (Ollama, LM Studio)**  💻 | This session introduces the benefits and practicalities of running Large Language Models on local machines. It will cover **Ollama**, including installation, downloading models (e.g., Llama, Mistral), command-line interaction, and basic API access. It will also explore **LM Studio** as a user-friendly GUI for discovering, downloading, and interacting with various LLMs, including setting up a local inference server. Brief consideration of hardware requirements will be discussed. |  |  |  |
+|   |  **Session 2: Using AI VERDE (Open-source LLMs)** V (assuming V is for VERDE) |  This session will explore **AI VERDE** (or a similar institutional platform) as a gateway to accessing and utilizing a curated collection of open-source LLMs. Content will include an overview of the platform's objectives, how to navigate its interface, select different models for specific tasks, and any unique features it offers for research or educational purposes, such as integrated datasets or collaborative tools.  |  |  |  |
+|   |  **Session 3: RAG (Retrieval Augmented Generation)** 📚 | This session dives into **Retrieval Augmented Generation (RAG)** to enhance LLM responses with external, up-to-date information. It will cover the core components: **document loading and chunking**, creating **embeddings** (e.g., using Sentence Transformers), setting up a **vector store** (e.g., FAISS, ChromaDB), and the **retrieval-then-generation** pipeline. The goal is to show how RAG mitigates hallucinations and grounds LLMs in specific knowledge domains.  |  |  |  |
+|   |  **Session 4: Tool calling** 🛠️ | This session focuses on enabling LLMs to interact with external tools and APIs, significantly expanding their capabilities. It will cover the concept of **function calling** (as seen in models like GPT) or similar mechanisms. Participants will learn how to define tools, how the LLM decides when and how to use a tool, and how to process the tool's output to inform the LLM's subsequent actions. Examples might include using a calculator or a simple web search API.  |  |  |  |
+|   |  **Session 5: Text to SQL code generation** 📊 | A practical application of LLM capabilities, this session explores **Text-to-SQL generation**. It will cover techniques for prompting LLMs to convert natural language questions into SQL queries. Discussion will include the importance of providing schema information (potentially via RAG) for accuracy and how to handle different SQL dialects or complex queries. Participants might practice with sample database schemas.  |  |  |  |
+|   |  **Session 6: Agentic systems** 🤖 |  This session introduces the concept of **AI agents**—systems where LLMs are a core component that can reason, plan, and execute sequences of actions to achieve goals. It will cover basic agent architectures (e.g., **ReAct: Reason + Act**), the idea of an agent loop (observe, think, act), and how agents can utilize tools. An overview of simple agent development using frameworks like LangChain Agents or a conceptual design exercise will be included.  |  |  |  |
+|    |  **Session 7: Modern Context Protocol (Claude SDK)** 📄 | This session focuses on effectively managing and utilizing context with modern LLMs, using the **Claude SDK** as a case study. It will cover best practices for structuring prompts, leveraging large context windows, and specific API features offered by Anthropic for tasks like document summarization, Q&A over long texts, and maintaining coherent conversations.  |  |  |  |
+|   |  **Session 8: Google Firebase** 🔥 | This session explores **Google Firebase** as a Backend-as-a-Service (BaaS) to support AI and LLM-powered applications. It will highlight key Firebase services such as **Firestore/Realtime Database** for storing application data (e.g., chat histories, user profiles, RAG vector metadata) and **Cloud Functions** for deploying serverless backend logic that might interact with LLM APIs or manage data processing pipelines.  |  |  |  |
+
+
+
 ***
 
-### Spring 2025
+### SPRING 2025 Workshop
 
 | Date      | Title      | Topic Description     | Wiki/Slides      | YouTube | Instructor | 
 | :--: | :-- | :--      | :--  | :--       | :--: | 
