@@ -20,7 +20,7 @@ The workshop culminates in an exploration of **agentic systems**, where LLMs are
 * Norman Di Palo and Arunkumar Byravan and Leonard Hasenclever and Markus Wulfmeier and Nicolas Heess and Martin Riedmiller. [Towards A Unified Agent with Foundation Models](https://arxiv.org/abs/2307.09668). *arXiv preprint 	arXiv:2307.09668*. (Discusses concepts relevant to agentic AI).
 * Anthropic. (Various documentation on [Claude SDK](https://docs.anthropic.com/en/docs/claude-code/sdk) and context management). (Specific SDK documentation provides context for modern LLM interaction).
 * [Google Firebase](https://firebase.google.com/). (Various documentation on integrating Firebase with AI applications). (Platform documentation shows practical data backend integration).
-* Mithun, P., Noriega-Atala, E., Merchant, N., & Skidmore, E. (2025). [AI-VERDE: A Gateway for Egalitarian Access to Large Language Model-Based Resources For Educational Institutions](https://arxiv.org/abs/2502.09651). *arXiv:2502.09651* might be relevant if the workshop is targeting such a platform.)
+* Mithun, P., Noriega-Atala, E., Merchant, N., & Skidmore, E. (2025). [AI-VERDE: A Gateway for Egalitarian Access to Large Language Model-Based Resources For Educational Institutions](https://arxiv.org/abs/2502.09651). *arXiv:2502.09651*. 
 
 ### Learning Goals
 
@@ -37,6 +37,7 @@ Okay, here's a list of the session topics for the workshop "Navigating the Moder
 ---
 
 ***
+## Fall 2025
 
 **Instructors**:  Nick Eddy /  Enrique Noriega/ Carlos Lizárraga 
 
@@ -48,10 +49,7 @@ Okay, here's a list of the session topics for the workshop "Navigating the Moder
 
 * **Zoom**: (?)
 
-
 _(Program not definitive!)_
-
-**Calendar**
 
 
 ## Workshop Sessions: Content Overview
