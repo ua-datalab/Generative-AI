@@ -21,9 +21,9 @@ print(f"api_key is:{api_key}")
 llm = build_llm_proxy(
     # model="anthropic/claude-3-7-sonnet-20250219",
     # model="anthropic/claude-3-7-sonnet-latest",
-    model ="gpt-4o",
+    # model ="gpt-4o",
     # model ="gpt-4",
-    # model ="gpt-4o-mini",    
+    model ="gpt-4o-mini",    
     # model ="anvilgpt/llama3:70b",
     # model ="anvilgpt/codegemma:latest", 
     # model ="Qwen2.5-Coder-32B-Instruct", 

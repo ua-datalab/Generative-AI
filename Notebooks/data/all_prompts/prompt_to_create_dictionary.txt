@@ -45,8 +45,97 @@ You should refer these files in the following order while executing the command 
 - Then only use your internal pre-trained knowledge for defining anything.
 
 
-Now execute the following command: Create a SIMILAR constants file for Buyer.
+Now execute the following command: Create a SIMILAR constants file for Buyer.Note that these headers have to be there for sure for which you have to fill up values.
 
+1. `'/* Constant for CcodeTabChar */`
+2. `'    Public Const CcodeTab16 As String = CcodeTab8 & CcodeTab8`
+3. `'/* Constants for Control Name - Prefix */`
+4. `'/* Constant for Access Modifier */`
+5. `'/*Constant for SQL */`
+6. `' To review before moving into Coding Syntax library`
+7. `'/* Constant for Common code characters and words */`
+8. `'/* Functions in Application Framework */`
+9. `'/* Constant for NameSpaces */`
+10. `'/* Constant for ClassName Data Objects*/`
+11. `'/* Constant for ClassName - Global */`
+12. `'/* Constant for ClassName - Intefaces */`
+13. `'/* Constant for ClassName Prefix */`
+14. `'/* Constant for ClassName Suffix */`
+15. `' Constants for DataType VB.NET and MSAccess`
+16. `' - Enumeric for FieldLength`
+17. `' - Enumeric for EditModes`
+18. `' - Enumeric for RefreshElement */`
+19. `'/* Constants for ValidationScope */`
+20. `'/* Constants for FormEvents */`
+21. `' - Enumeric for SelectFields */`
+22. `'Constants for Variables - Common - at Class and Module level`
+23. `'Constants for Variables - Declarations - Collection Class - at Class level`
+24. `'Constants for Variables - at Function level`
+25. `'Constants for Variables - Variables Names`
+26. `'Constants for Parameter Variables`
+27. `'Constants for Parameter Variable declaration`
+28. `'SQL`
+29. `'Constants for FormCode`
+30. `'Common Section Comments for  - Functions / Procedures`
+31. `'/* COnstants for ErrMsg */`
+32. `'/* Constants used only in the specific following classes */`
+33. `'-Common Constants for a class`
+34. `'-Common Constants for a Method Calls`
+35. `'-Common Constants for Method Names`
+36. `'-Common Constants for Property Names`
+37. `'-Common Constants for a Method Parameters`
+38. `'-Common Constants for a Method body`
+39. `'----/* Declaration - Variables */----`
+40. `'Cconstants for - Declaring Variables`
+41. `'----/* Initialize - Variables */----`
+42. `'Constants for - Default Variables`
+43. `'----/* Functionality  - Between Start  and End*/----`
+44. `'Constants for - GoTo Lables`
+45. `'Constants for - Exit and End Routiens`
+46. `'----/* Close - Variables */----`
+47. `'----/* Return Execution Status */----`
+48. `'Constants for - Return values`
+49. `'----/* Errorhandler */----`
+50. `'Constants for - Errorhandler`
+51. `'Constants - Element Class - Properties`
+52. `'Properties`
+53. `'/* Constants Collection Class -  Function Name  */`
+54. `'/* CRUDS Functions`
+55. `'/* Collection Class Methods`
+56. `'/* Constants Collection Class -  code inside Functions  */`
+57. `'/* Constants Collection Class -  code inside Functions - Recordset function names and calls */`
+58. `'Implements interface`
+59. `'Constants`
+60. `'Variables`
+61. `'Function Name`
+62. `'/* Constants for Function / Properties */`
+63. `'/* Constant for ClassName Extension */`
+64. `'Vb Reserver Words`
+65. `' Signs`
+66. `' Properties of objects / controls in VB.NET`
+67. `'Class */`
+68. `'Convertors`
+69. `'/* Constant for Data Types - System Classes  VB.NET*/`
+70. `'/* Constant for Data Types - Database VB.NET*/`
+71. `'Do not use this set, Replace this set`
+72. `'/* Constant for Data Type Conversion  VB.NET*/`
+73. `'-Form Designer`
+74. `'Control - Attributes`
+75. `'Syntax for - Property`
+76. `'Constatnts for - Function Names`
+77. `'Syntax for - Events`
+78. `'/* Constant for Data Types - MS Access */`
+79. `'/* Constants Fields Class -  Function Calls  */`
+80. `'Syntax - Miscellaneous`
+81. `'---------------Vb Syntax - User defined Words - End --------------------------------------------------`
+82. `'---------------MSAccess Syntax - Reserver Words - Start ----------------------------------------------`
+83. `'---------------MSAccess Syntax - Reserver Words - End ----------------------------------------------`
+84. `'/* Constant for Property - Functions */`
+85. `'/* Constants for Collection Class Functions */`
+86. `'Constants - Common`
+87. `'/* Constants - Friend */`
+88. `'/* Constants - Protected */`
+89. `'/* Constants - Private */`
 
 
 
