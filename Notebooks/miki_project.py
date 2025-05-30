@@ -2,14 +2,38 @@ import os
 import json
 from pathlib import Path
 from chains.llm_proxy import build_llm_proxy
+import datetime
+
+prompt_file_name="./data/all_prompts/prompt_to_create_dictionary.txt"
+output_file_name="./outputs/dictionary_frm_clsBuyer_related_classes.vb"
+
+# dict_dynamic_business_object_names= {
+#     "{input_class_name}": "clsColors",
+#     "{output_class_name}": "clsBuyers"
+# }
+# input_class_path="./data/color_related/clsColors.vb"
+
+llm_url ='https://llm-api.cyverse.ai'
+api_key = os.environ.get('OPENAI_API_KEY')
+print(f"api_key is:{api_key}")
 
 
-prompt_template_file="./data/clsColor_llm_prompt_dynamic_variables.txt"
+llm = build_llm_proxy(
+    # model="anthropic/claude-3-7-sonnet-20250219",
+    # model="anthropic/claude-3-7-sonnet-latest",
+    model ="gpt-4o",
+    # model ="gpt-4",
+    # model ="gpt-4o-mini",    
+    # model ="anvilgpt/llama3:70b",
+    # model ="anvilgpt/codegemma:latest", 
+    # model ="Qwen2.5-Coder-32B-Instruct", 
+    # model ="anvilgpt/codegemma:latest", 
 
-dict_dynamic_business_object_names= {
-    "{input_class_name}": "clsColor",
-    "{output_class_name}": "clsBuyer"
-}
+    url=llm_url,
+    engine="OpenAI",
+    temperature=0.1,
+    api_key=api_key,
+)
 
 
 
@@ -46,20 +70,6 @@ def inject_variables_into_template(template_file_path, variable_values):
 
     return template_text
 
-llm_url ='https://llm-api.cyverse.ai'
-api_key = os.environ.get('OPENAI_API_KEY')
-print(f"api_key is:{api_key}")
-
-
-llm = build_llm_proxy(
-    # model="anthropic/claude-3-7-sonnet-20250219",
-    # model="anthropic/claude-3-7-sonnet-latest",
-    model ="gpt-4o",
-    url=llm_url,
-    engine="OpenAI",
-    temperature=0.1,
-    api_key=api_key,
-)
 
 
 def read_vbnet_file(file_path):
@@ -88,6 +98,11 @@ def save_code_to_file(code_content, filename):
     except IOError as e:
         print(f"Error saving file: {e}")
 
-prompt = inject_variables_into_template(prompt_template_file, dict_dynamic_business_object_names)
+# prompt_without_input_class = inject_variables_into_template(prompt_template_file, dict_dynamic_business_object_names)
+prompt = read_vbnet_file(prompt_file_name)
+# from datetime import datetime
+# current_time = datetime.now()
+# print(current_time)
+# prompt = f"{current_time} use this as the time stamp for '* Created on" + prompt 
 message = llm.invoke(prompt)
-save_code_to_file(message.content, './outputs/buyer_created_by_llm_based_on_color_class.vb')
+save_code_to_file(message.content, output_file_name)

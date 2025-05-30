@@ -1,0 +1,14 @@
+Declaration/Structure:
+
+I am creating an LLM distribution platform called AIVerde. Details of this is given in teh attached pdf research paper.  
+
+Now execute the following commands:create me the following documents related to a software development life cycle:
+
+1) A business requirement document
+2) A software requirement specification document
+3) A high level design 
+4) A low level design 
+5) Database and table structure- in data definition language
+6) Test cases
+
+

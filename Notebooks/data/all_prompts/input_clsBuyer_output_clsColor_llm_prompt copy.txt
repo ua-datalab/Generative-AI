@@ -1,0 +1,1607 @@
+Declaration/Structure:
+I am pasting below two vb.net files. 
+The first file, called metaDataFile , earmarked below with "------start of constants and definitions file---"  contains the  metadata of the datatypes and the syntax. 
+Second file, called clsBuyer, earmarked below with "---~start of actual class file for clsBuyer----"  shows a class for a buyer created using the metadata in metaDataFile.  
+For example, inside clsBuyer, understand within this construct: "Public Const CmintColorUid_Length As Integer = clsGlobalEnum.enumFieldLength.eLength4"  eLength4 as length of a field with datalength 4.
+eLength4 is in turn taken from the metaDataFile. 
+
+
+Definition/Information:
+Fields for color class are as follows
+1) Field name is colorUid ,  datatype is Integer, datalength 4
+2) Field name is colorcode . datatype is varwchar , datalength 10
+3) Field name is colorname . datatype is varwchar , datalength 31
+
+
+Functionality:
+You should refer these files in the following order while executing the command below.
+1) first read the metaDataFile
+2) follow the region hierarchy in clsBuyer
+3) Then only use your internal pre-trained knowledge for defining anything.
+
+Now execute the following commands:
+1) Create a similar vb.net class but instead this time for a color class. 
+2) Use metaDataFile as reference.
+3) do not remove the comments given in the clsBuyer- rather replicate it as is with the required modifications.
+4) make sure intendation in the output class is matched exactly like in the input class, clsBuyer, i.e use vbTab for indentation (as per the definition of tab given in vb.net coding standards).
+5) when you create "Variable for Fields" create mlngColorUid As String
+6) make sure you keep the casing (e.g. uppercase, camel case) of the field names exactly as that of clsBuyer. 
+7) make sure inline spacing of every single code line in the output class is matched exactly like in the input class, clsBuyer. For example note that in this line: "Private mobjSolutionBO As clsSolutionBO'Default Design"
+there is no space between "clsSolutionBO" and "'Default Design"
+
+
+
+
+
+------start of constants and definitions file---
+
+Module basVBDotNet_CodeConstants
+
+#Region "Groups - Code Constants"
+
+    '/* Constant for CcodeTabChar */
+    Public Const CcodeTab1 As String = vbTab
+    Public Const CcodeTab2 As String = CcodeTab1 & vbTab
+    Public Const CcodeTab3 As String = CcodeTab2 & vbTab
+    Public Const CcodeTab4 As String = CcodeTab3 & vbTab
+    Public Const CcodeTab5 As String = CcodeTab4 & vbTab
+    Public Const CcodeTab6 As String = CcodeTab5 & vbTab
+    Public Const CcodeTab7 As String = CcodeTab6 & vbTab
+    Public Const CcodeTab8 As String = CcodeTab7 & vbTab
+    Public Const CcodeTab9 As String = CcodeTab8 & vbTab
+    Public Const CcodeTab10 As String = CcodeTab9 & vbTab
+    '    Public Const CcodeTab16 As String = CcodeTab8 & CcodeTab8
+
+    '/* Constants for Control Name - Prefix */
+    Public Const CcodeFrm As String = "frm"
+    Public Const CcodeGrb As String = "grb"
+    Public Const CcodeDgv As String = "dgv"
+    Public Const CcodeLsv As String = "Lsv"
+    Public Const CcodeTxt As String = "txt"
+    Public Const CcodeLbl As String = "lbl"
+    Public Const CcodeCmb As String = "cmb"
+    Public Const CcodeBut As String = "but"
+    Public Const CcodeChk As String = "chk"
+    Public Const CcodeGdv As String = "gdv"
+    Public Const CcodeFra As String = "fra"
+    Public Const CcodeCmd As String = "cmd"
+
+    '/* Constant for Access Modifier */
+    Public Const CcodePartial As String = "Partial"
+    Public Const CcodePrivate As String = "Private"
+    Public Const CcodePublic As String = "Public"
+    Public Const CcodeFriend As String = "Friend"
+    Public Const CcodeProtected As String = "Protected"
+    Public Const CcodeOverrides As String = "Overrides"
+    Public Const CcodeShadows As String = "Shadows"
+    Public Const CcodeOptional As String = "Optional"
+
+    '/*Constant for SQL */
+    Public Const CcodeSqlSelect As String = "Select"
+    Public Const CcodeSqlUpdate As String = "Update"
+    Public Const CcodeSqlInsert As String = "Insert"
+    Public Const CcodeSqlDelete As String = "Delete"
+    Public Const CcodeSqlInto As String = "Into"
+    Public Const CcodeSqlFrom As String = "From"
+    Public Const CcodeSqlWhere As String = "Where"
+    Public Const CcodeSqlAnd As String = "And"
+    Public Const CcodeSqlValues As String = "Values"
+    Public Const CcodeSqlSet As String = "Set"
+
+    ' To review before moving into Coding Syntax library 
+    Public Const Ccodelng As String = "lng"
+    Public Const CcodeInt As String = "int"
+    Public Const CcodeObj As String = "obj"
+    Public Const Ccodestr As String = "str"
+    Public Const CcodeChr As String = "Chr"
+
+#End Region
+
+    Friend Const CCodeComment_DefaultDesign As String = "'Default Design"
+    Friend Const CCodeComment_ElementClassObject As String = "'Element Class's object"
+
+    '/* Constant for Common code characters and words */
+    Public Const CcodeUnderscoreDataType As String = "_DataType"
+    Public Const CcodeUnderscore As String = "_"
+    Public Const CcodeEnumPrefix As String = "e"
+    Public Const CcodeSpace As String = " "
+    Public Const CcodeSqlstmt As String = "SqlStmt"
+    Public Const CcodeView As String = "View"
+    Public Const CcodeBO As String = "BO"
+    Public Const CcodeUI As String = "UI"
+    Public Const CcodeBusinessObject As String = "BusinessObject"
+    Public Const CcodesecUserFormAccessDetail As String = "secUserFormAccessDetail"
+    Public Const CcodeInFrameName As String = "InFrameName"
+    Public Const CcodeInEvent As String = "InEvent"
+    Public Const CcodeFocus As String = "Focus"
+    Public Const CcodeFormId As String = "FormId"
+    Public Const CcodeFormCaption As String = "FormCaption"
+    Public Const CcodeeFrame As String = "eFrame"
+    Public Const CcodeIntMsgResult As String = "intMsgResult"
+    Public Const CcodeCgstrDeleteMessage As String = "CgstrDeleteMessage"
+    Public Const CcodeCgstrMsgboxCaption As String = "CgstrMsgboxCaption"
+    Public Const CcodeCgstrSaveMessage As String = "CgstrSaveMessage"
+    Public Const CcodeToolBox As String = "ToolBox"
+    Public Const CcodeUserPermission As String = "UserPermission"
+    Public Const CcodestrFormCaption As String = "strFormCaption"
+    Public Const CcodeFormControls As String = "FormControls"
+    Public Const CcodeKeyChar As String = "KeyChar"
+
+    Public Const CcodeGobjApp As String = "gobjApp"
+    Public Const CcodeGobjGF As String = "gobjGF"
+
+    Public Const CcodecmdAddNew As String = "cmdAddNew"
+    Public Const CcodecmdEdit As String = "cmdEdit"
+    Public Const CcodecmdSave As String = "cmdSave"
+    Public Const CcodecmdDelete As String = "cmdDelete"
+    Public Const CcodecmdCancel As String = "cmdCancel"
+
+    Public Const CcodecmdMoveFirst As String = "cmdMoveFirst"
+    Public Const CcodecmdMovePrevious As String = "cmdMovePrevious"
+    Public Const CcodecmdMoveNext As String = "cmdMoveNext"
+    Public Const CcodecmdMoveLast As String = "cmdMoveLast"
+
+    Public Const CcodecmdGoToId As String = "cmdGoToId"
+    Public Const CcodecmdClose As String = "cmdClose"
+
+    Public Const CcodechkGrid As String = "chkGrid"
+    Public Const CcodelblCloseForm As String = "lblCloseForm"
+    Public Const CcodetxtGoToId As String = "txtGoToId"
+
+
+    Public Const CmstrVariablePropertyObject As String = "Variable - Property - Object"
+    Public Const CmstrVariablePropertyNonObject As String = "Variable - Property - Non - Object"
+    Public Const CmstrVariableGeneralObject As String = "Variable - General - Object"
+    Public Const CmstrVariableGeneralNonObject As String = "Variable - General - Non - Object"
+    Public Const CcodeRS_GridView As String = "RS_GridView"
+    Public Const CcodeGF_Desktop As String = "GF_Desktop"
+    Public Const CCodeSystem_Reflection_GetCurrentMethod_Name As String = "System.Reflection.MethodInfo.GetCurrentMethod().Name"
+    Public Const CCodeSystem_Reflection_GetCurrentMethod_DeclaringType_Name As String = "System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name"
+
+
+
+    Friend Const CcodemobjApp As String = "mobjApp"
+    Friend Const CcodemobjSolutionBO As String = "mobjSolutionBO"
+    Friend Const CcodemobjClassAttribute As String = "mobjClassAttribute"
+    Friend Const CcodemobjFormAttribute As String = "mobjFormAttribute"
+    Friend Const CcodemobjFunction_RecordsetReposition_GUI As String = "mobjFunction_RecordsetReposition_GUI"
+    Friend Const CcodemobjFunction_EnableUserInterface_GUI As String = "mobjFunction_EnableUserInterface_GUI"
+    Friend Const CcodemobjFunction_CaptureData_GUI As String = "mobjFunction_CaptureData_GUI"
+    Friend Const CcodemobjFunction_DisplayData_GUI As String = "mobjFunction_DisplayData_GUI"
+
+    Friend Const CcodeInobjApp As String = "InobjApp"
+    Friend Const CcodeInobjSolutionBO As String = "InobjSolutionBO"
+    Friend Const CcodeInobjClassAttribute As String = "InobjClassAttribute"
+
+    Friend Const CcodeNewclsClassAttribute As String = "New clsClassAttribute"
+    Friend Const CcodeNewFormAttribute As String = "New clsFormAttribute"
+
+    Friend Const CcodeAppBo As String = "AppBO"
+    Friend Const CcodeAppUI As String = "AppUI"
+    Friend Const CcodeAppBO_Friend As String = "AppBO_Friend"
+    Friend Const CcodeStorageBo As String = "StorageBO"
+    Friend Const CcodeDBRDBMS_DBName As String = "DBRDBMS_DBName"
+    Friend Const CcodeADOConnection As String = "ADOConnection"
+    Friend Const CcodeAppBO_Functions As String = "AppBO_Functions"
+    Friend Const CcodeAppUI_Functions As String = "AppUI_Functions"
+    Friend Const CcodeInitialize_Object As String = "Initialize_Object"
+
+    '/* Functions in Application Framework */
+    Friend Const CcodeAF_SQLStmt_FormatData As String = "AF_SQLStmt_FormatData"
+    Friend Const CcodeAF_GetDBConnection As String = "AF_GetDBConnection"
+    Friend Const CcodeAFUI_cmdGoToId_Click As String = "AFUI_cmdGoToId_Click"
+    Friend Const CcodeAFUI_chkGrid_CheckStateChanged As String = "AFUI_chkGrid_CheckStateChanged"
+    Friend Const CcodeAFUI_Color_FormButton As String = "AFUI_Color_FormButton"
+
+    '/* Constant for NameSpaces */
+    Public Const CcodeNameSpaceGlobal As String = "NsGlobalFunctions"
+    Public Const CcodeNameSpaceGlobalDot As String = "NsGlobalFunctions."
+
+    '/* Constant for ClassName Data Objects*/
+    Public Const CcodeClsAdoConnection As String = "clsAdoConnection"
+    Public Const CcodeClsRecordset As String = "clsRecordset"
+    Public Const CcodeClsFields As String = "clsFields"
+    Public Const CcodeClsField As String = "clsField"
+    Public Const CcodeClsBDataAccess As String = "clsBusinessDataAccess"
+    Public Const CcodeClsCollection_Multiuser As String = "clsCollection_MultiUser"
+    Public Const CcodeClsCollection As String = "clsCollection"
+
+    '/* Constant for ClassName - Global */
+    Public Const CcodeClsGlobalEnum As String = "clsGlobalEnum"
+    Public Const CcodeClsGlobalEnumDot As String = "clsGlobalEnum."
+    Friend Const CcodeclsSolutionBO As String = "clsSolutionBO"
+    Friend Const CcodeclsClassAttribute As String = "clsClassAttribute"
+    Friend Const CCodeclsApplication As String = "clsApplication"
+
+    '/* Constant for ClassName - Intefaces */
+    Public Const CcodeIfaBusinessObject As String = "ifaBusinessObject"
+    Public Const CcodeIfaBusinessElement As String = "ifaBusinessElement"
+    Public Const CcodeIfaBusinessObject_Public As String = "ifaBusinessObject_Public"
+    Public Const CcodeIfaBusinessObject_Private As String = "ifaBusinessObject_Private"
+    Public Const CcodeIfaBusinessObject_Private_Multiuser As String = "ifaBusinessObject_Private_Multiuser"
+    Public Const CcodeIfaRecordset As String = "ifaRecordset"
+    Public Const CcodeIfaCRUDS As String = "ifaCRUDS"
+
+    '/* Constant for ClassName Prefix */
+    Public Const CcodeClassPrefix As String = "cls"
+    Public Const CcodeBRClassPrefix As String = "Br"
+    Public Const CcodeFormPrefix As String = "frm"
+    Public Const CcodeIfaPrefix As String = "ifa"
+
+    '/* Constant for ClassName Suffix */
+    Public Const CcodeCollectionClassSufix As String = "s"
+
+
+    Public Const CcodeCmstr = "Cmstr"
+    Public Const CcodeModuleConstantStringPrefix As String = "Cmstr"
+    Public Const CcodeProcedureConstantStringPrefix As String = "Cstr"
+    Public Const CcodeGlobalConstantStringPrefix As String = "Cgstr"
+    Public Const CcodeModuleConstantIntegerPrefix As String = "Cmint"
+    Public Const CcodeProcedureConstantIntegerPrefix As String = "Cint"
+    Public Const CcodeGlobalConstantIntegerPrefix As String = "Cgint"
+
+
+    Public Const CcodeEnum As String = "Enum"
+    Public Const CcodeEndEnum As String = "End Enum"
+    Public Const CcodeEnumDataType As String = CcodeClsGlobalEnumDot & "enumDataTypes"
+    Public Const CcodeEnumFieldLength As String = CcodeClsGlobalEnumDot & "enumFieldLength"
+    Public Const CcodeEnumEditModes As String = CcodeClsGlobalEnumDot & "enumEditModes"
+    Public Const CcodeEnumRefreshElement As String = CcodeClsGlobalEnumDot & "enumRefreshElement"
+    Public Const CcodeEnumValidationScope As String = CcodeClsGlobalEnumDot & "enumValidationScope"
+    Public Const CcodeEnumFormEvents As String = "enumFormEvents"
+    Public Const CcodeEnumFillCombo As String = "enumFillCombo"
+    Public Const CcodeEnumSelectFields As String = "enumSelectFields"
+    Public Const CcodeEnumFields As String = "enumFields"
+    Public Const CcodeEnumFrame As String = "enumFrame"
+
+    ' Constants for DataType VB.NET and MSAccess
+    Public Const CcodeeEmpty As String = "eEmpty"
+    Public Const CcodeeSmallInt As String = "eSmallInt"
+    Public Const CcodeeInteger As String = "eInteger"
+    Public Const CcodeeSingle As String = "eSingle"
+    Public Const CcodeeDouble As String = "eDouble"
+    Public Const CcodeeCurrency As String = "eCurrency"
+    Public Const CcodeeDate As String = "eDate"
+    Public Const CcodeeBSTR As String = "eBSTR"
+    Public Const CcodeeIDispatch As String = "eIDispatch"
+    Public Const CcodeeError As String = "eError"
+    Public Const CcodeeBoolean As String = "eBoolean"
+    Public Const CcodeeVariant As String = "eVariant"
+    Public Const CcodeeIUnknown As String = "eIUnknown"
+    Public Const CcodeeDecimal As String = "eDecimal"
+    Public Const CcodeeTinyInt As String = "eTinyInt"
+    Public Const CcodeeUnsignedTinyInt As String = "eUnsingedTinyInt"
+    Public Const CcodeeUnsignedSmallInt As String = "eUnsignedSmallInt"
+    Public Const CcodeeUnsignedInt As String = "eUnsignedInt"
+    Public Const CcodeBigInt As String = "eBigInt"
+    Public Const CcodeeUnsignedBigInt As String = "eUnsignedBigInt"
+    Public Const CcodeeFileTime As String = "eFiletime"
+    Public Const CcodeeGUID As String = "eGUID"
+    Public Const CcodeeBinary As String = "eBinary"
+    Public Const CcodeeChar As String = "eChar"
+    Public Const CcodeeWChar As String = "eWChar"
+    Public Const CcodeeNumeric As String = "eNumeric"
+    Public Const CcodeeUserDefined As String = "eUserDefined"
+    Public Const CcodeeDBDate As String = "eDBDate"
+    Public Const CcodeeDBTime As String = "eDBTime"
+    Public Const CcodeeDBTimeStamp As String = "eDBTimeStamp"
+    Public Const CcodeeChapter As String = "eChapter"
+    Public Const CcodeePropVarient As String = "ePropVarient"
+    Public Const CcodeeVarNumeric As String = "eVarNumeric"
+    Public Const CcodeeVarChar As String = "eVarChar"
+    Public Const CcodeeLongVarChar As String = "eLongVarChar"
+    Public Const CcodeeVarWChar As String = "eVarWChar"
+    Public Const CcodeeLongvarWChar As String = "eLongvarWChar"
+    Public Const CcodeeVarBinary As String = "eVarBinary"
+    Public Const CcodeeLongVarBinary As String = "eLongVarBinary"
+    Public Const CcodeadArray As String = "adArrary"
+
+
+    Public Const CcodeSQLbigint As String = "SQLbigint"
+    Public Const CcodeSQLbinary As String = "SQLbinary"
+    Public Const CcodeSQLbit As String = "SQLbit"
+    Public Const CcodeSQLchar As String = "SQLchar"
+    Public Const CCodeSQLdate As String = "SQLdate"
+    Public Const CcodeSQLdatetime As String = "SQLdatetime"
+    Public Const CcodeSQLdatetime2 As String = "SQLdatetime2"
+    Public Const CcodeSQLdatetimeoffset As String = "SQLdatetimeoffset"
+    Public Const CcodeSQLdecimal As String = "SQLdecimal"
+    Public Const CcodeSQLfloat As String = "SQLfloat"
+    Public Const CcodeSQLgeography As String = "SQLgeography"
+    Public Const CcodeSQLgeometry As String = "SQLgeometry"
+    Public Const CcodeSQLhierarchyid As String = "SQLhierarchyid"
+    Public Const CcodeSQLimage As String = "SQLimage"
+    Public Const CcodeSQLint As String = "SQLint"
+    Public Const CcodeSQLmoney As String = "SQLmoney"
+    Public Const CcodeSQLnchar As String = "SQLnchar"
+    Public Const CcodeSQLntext As String = "SQLntext"
+    Public Const CcodeSQLnumeric As String = "SQLnumeric"
+    Public Const CcodeSQLnvarchar As String = "SQLnvarchar"
+    Public Const CcodenSQLvarchar_max As String = "SQLnvarcharmax"
+    Public Const CcodeSQLreal As String = "SQLreal"
+    Public Const CcodeSQLsmalldatetime As String = "SQLsmalldatetime"
+    Public Const CcodeSQLsmallint As String = "SQLsmallint"
+    Public Const CcodeSQLsmallmoney As String = "SQLsmallmoney"
+    Public Const CcodeSQLvarient As String = "SQLvarient"
+    Public Const CcodeSQLtext As String = "SQLtext"
+    Public Const CcodeSQLtime As String = "SQLtime"
+    Public Const CcodeSQLtimestamp As String = "SQLtimestamp"
+    Public Const CcodeSQLtinyint As String = "SQLtinyint"
+    Public Const CcodeSQLuniqueidentifier As String = "SQLuniqueidentifier"
+    Public Const CcodeSQLvarbinary As String = "SQLvarbinary"
+    Public Const CcodeSQLvarbinarymax As String = "SQLvarbinarymax"
+    Public Const CcodeSQLvarchar As String = "SQLvarchar"
+    Public Const CcodeSQLxml As String = "SQLxml"
+
+
+    ' - Enumeric for FieldLength
+    Public Const CcodeeLength As String = "eLength"
+    Public Const CcodeeLength1 As String = "eLength1"
+    Public Const CcodeeLength5 As String = "eLength5"
+    Public Const CcodeeLenght8 As String = "eLength8"
+    Public Const CcodeeLength10 As String = "eLength10"
+    Public Const CcodeeLength11 As String = "eLength11"
+    Public Const CcodeeLength19 As String = "eLength19"
+    Public Const CcodeeLength31 As String = "eLength31"
+    Public Const CcodeeLength50 As String = "eLength50"
+    Public Const CcodeeLength255 As String = "eLength255"
+    Public Const CcodeeLength4000 As String = "eLength4000"
+
+
+    ' - Enumeric for EditModes
+    Public Const CcodeEditModeseNavigation As String = "eNavigation"
+    Public Const CcodeEditModeseAdd As String = "eAdd"
+    Public Const CcodeEditModeseEdit As String = "eEdit"
+
+    ' - Enumeric for RefreshElement */
+    Public Const CcodeeBlank As String = "eBlank"
+    Public Const CcodeeRecordValue As String = "eRecordValue"
+
+    '/* Constants for ValidationScope */
+    Public Const CcodeeSingleField As String = "eSingleField"
+    Public Const CcodeeSingleFieldKeyPress As String = "eSingleFieldKeyPress"
+    Public Const CcodeeAllFields As String = "eAllFields"
+
+    '/* Constants for FormEvents */
+    Public Const CcodeFormEventAdd As String = "eFormAdd"
+    Public Const CcodeFormEventEdit As String = "eFormEdit"
+    Public Const CcodeFormEventSave As String = "eFormSave"
+    Public Const CcodeFormEventDelete As String = "eFormDelete"
+    Public Const CcodeFormEventCancel As String = "eFormCancel"
+    Public Const CcodeFormEventNoRecords As String = "eFormNoRecords"
+    Public Const CcodeFormEventDefault As String = "eFormDefault"
+    Public Const CcodeFormEventRecordFound As String = "eFormRecordFound"
+    Public Const CcodeFormEventLoad As String = "eFormLoad"
+
+    '/* Constants for FormEvents */
+    Public Const CcodeeFraNotDefined As String = "efraNotDefined"
+    Public Const Ccodeefra As String = "efra"
+
+    ' - Enumeric for SelectFields */
+    Public Const CcodeSelectFieldseLoad As String = "eLoad"
+    Public Const CcodeSelectFieldseDefault As String = "eDefault"
+    Public Const CcodeSelectFieldseUserDefined As String = "eUserDefined"
+
+    'Constants for Variables - Common - at Class and Module level
+    Friend Const CcodeDeclaration_mobjApp As String = "Private mobjApp As clsApplication"
+    Public Const CcodeDeclaration_mobjSolutionBO As String = "Private mobjSolutionBO As clsSolutionBO"
+    Public Const CcodeDeclaration_mobjClassAttribute As String = "Private mobjClassAttribute As clsClassAttribute"
+    Public Const CcodeDeclaration_mobjFormAttribute As String = "Private mobjFormAttribute As clsFormAttribute"
+
+    Public Const CcodeFieldCountVariable As String = "mlngFieldCount"
+
+    Public Const CcodeVariablePreLong As String = "mlng"
+    Public Const CcodeVariablePreInt As String = "mint"
+    Public Const CcodeVariablePreDouble As String = "mdbl"
+    Public Const CcodeVariablePreDateTime As String = "mdtm"
+    Public Const CcodeVariablePreBoolean As String = "mbol"
+    Public Const CcodeVariablePreVariant As String = "mvar"
+    Public Const CcodeVariablePreString As String = "mstr"
+    Public Const CcodeVariablePreMemo As String = "mmem"
+    'Public Const CcodeVariablePreObject As String = "mobj"
+    Public Const Ccodemobj As String = "mobj"
+
+    'Constants for Variables - Declarations - Collection Class - at Class level
+    Public Const CcodeDeclarationmbolAutoValidate As String = "Private mbolAutoValidate As Boolean"
+    Public Const CcodeDeclarationmobjCollection_MU As String = "Private mobjCollection_MU As clsCollection_MultiUser"
+
+
+    'Constants for Variables - at Function level
+    Public Const CcodeDeclarationBolReturnVariable As String = "Dim bolReturnValue As Boolean"
+    Public Const CcodeDeclarationStrReturnVariable As String = "Dim strReturnValue As String"
+    Public Const CcodeDeclarationIntReturnVariable As String = "Dim IntReturnValue As Integer"
+    Public Const CcodeDeclarationOutstrReturnVariable As String = "Dim OutstrReturnValue As String"
+
+    Public Const CcodeDeclarationIntRetunVariableOpen As String = "Dim intReturnValue As "
+    Public Const CcodeDeclarationIntCntr As String = "Dim intCntr As Integer"
+    Public Const CcodeDeclarationObjRs As String = "Dim objRs As clsRecordset"
+    Public Const CcodeDeclarationObjFields As String = "Dim objFields As clsFields"
+    Public Const CcodeDeclarationStrSQLStmt As String = "Dim strSqlstmt As String"
+    Public Const CcodeDeclarationStrMaxFieldName As String = "Dim strMaxFieldName As String"
+    Public Const CcodeDeclarationStrErrMessage As String = "Dim strErrMessage As String"
+    Public Const CcodeDeclarationbolExecutionComplete As String = "Dim ExecutionComplete As Boolean"
+    Public Const CcodeDeclarationThisFunctionName As String = "Dim ThisFunctionName As String = System.Reflection.MethodInfo.GetCurrentMethod().Name "
+    Public Const CcodeDeclarationIntMsgBoxResult As String = "Dim intMsgResult As Microsoft.VisualBasic.MsgBoxResult"
+
+    'Constants for Variables - Variables Names
+    Public Const CcodeExecutionComplete As String = "ExecutionComplete"
+    Public Const CcodeThisFunctionName As String = "ThisFunctionName"
+    Public Const CcodebolReturnValue As String = "bolReturnValue"
+    Public Const CcodestrReturnValue As String = "strReturnValue"
+    Public Const CcodestrReturnMessage As String = "strReturnMessage"
+    Public Const CcodeIntReturnValue As String = "intReturnValue"
+    Public Const CcodeOutReturnValue As String = "OutstrReturnValue"
+    Public Const CcodeOutbolRecordFound As String = "OutbolRecordFound"
+    Public Const CcodeOutstrReturnMessage As String = "OutstrReturnMessage"
+    Public Const CcodebolRecordFound As String = "bolRecordFound"
+
+    Public Const CcodeintCntr As String = "intCntr"
+    Public Const CcodeobjRs As String = "objRs"
+    Public Const CcodeObjFields As String = "ObjFields"
+    Public Const CcodeStrMaxFieldName As String = "strMaxFieldName"
+    Public Const CcodeStrErrMessage As String = "strErrMessage"
+    Public Const CcodeintErrField As String = "intErrField"
+    Friend Const CcodemobjCollection_MU As String = "mobjCollection_MU"
+
+
+    'Constants for Parameter Variables
+    Public Const CcodeInbolAskConfirmation As String = "InbolAskConfirmation"
+    Public Const CcodeInintIndex As String = "InintIndex"
+    Public Const CcodeInlngVal As String = "InlngVal"
+    Public Const CcodeInlngValidationScope As String = "InlngValidationScope"
+    Public Const CcodeInobjArray As String = "InobjArr"
+    Public Const CcodeInobjGrid As String = "InobjGrid"
+    Public Const CcodeInoutlngField As String = "Inoutlngfield"
+    Public Const CcodeInoutobjGUI As String = "InoutobjGUI"
+    Public Const CcodeInoutIntKeyAscii As String = "InoutIntKeyAscii"
+    Public Const CcodeInoutlngErrField As String = "InoutlngErrField"
+    Public Const CcodeInouttxtTextBox As String = "InouttxtTextBox"
+    Public Const CcodeInstrRecordSource As String = "InstrRecordSource"
+    Public Const CcodeInvarCurrentVal As String = "InvarCurrentVal"
+
+    'Constants for Parameter Variable declaration
+    Public Const CcodeByRefInobjSolutionBO As String = "ByRef InobjSolutionBO As clsSolutionBO"
+    Public Const CcodeByRefInobjApp As String = "ByRef InobjApp As clsApplication"
+    Public Const CcodeByRefInobjClassAttribute As String = "ByRef InobjClassAttribute As clsClassAttribute"
+    Public Const CcodeOptionalByRefInobjClassAttribute As String = "Optional ByRef InobjClassAttribute As clsClassAttribute = Nothing"
+    Public Const CcodeOptionalByValInstrRecordSource As String = "Optional ByVal InstrRecordSource As String = clsGlobalEnum.CgstrBlank"
+
+    'SQL
+    Public Const CcodeStrSQLStmt As String = "strSqlstmt"
+    Public Const CcodeSqlStrSelectSql As String = "strSelectSql"
+    Public Const CcodeSqlStrInsertSql As String = "strInsertSql"
+    Public Const CcodeSqlStrUpdateSql As String = "strUpdateSql"
+    Public Const CcodeSqlStrSQLStmt As String = "strSQLStmt"
+
+    Public Const CcodeCk As String = "Ck"
+
+    'Constants for FormCode
+    Public Const CcodeFormAttribute As String = "FormAttribute"
+    Public Const CcodeWhereClause_A As String = "WhereClause_A"
+
+    Public Const CcodeRHS As String = "RHS"
+    'Public Const CcodeDB_Type As String = "DB_Type"
+    Public Const CcodeDatabaseType As String = "DatabaseType"
+    Public Const CcodeClassAttribute As String = "ClassAttribute"
+    Public Const CcodeCollectionClass As String = "CollectionClass"
+    Public Const CcodeCRUDS As String = "CRUDS"
+    Public Const CcodeRecordsetBO As String = "RecordsetBO"
+    Public Const CcodeSolutionBO As String = "SolutionBO"
+    Public Const CcodeApp As String = "App"
+
+
+    'Common Section Comments for  - Functions / Procedures 
+    Friend Const CcodeComment_DeclarationPrivateObjectVariable As String = "'----/* Declaration - Private Object variables */----"
+    Friend Const CcodeComment_DeclarationPrivateVariable As String = "'----/* Declaration - Private variables */----"
+    Friend Const CcodeComment_InitializeVarible As String = "'----/* Initialize - Variables */----"
+    Friend Const CcodeComment_InternalVariable As String = "'--Local Variables"
+    Friend Const CcodeComment_Parameter As String = "'--Parameters"
+    Friend Const CcodeComment_FunctionalityStart As String = "'----/* Functionality  - Start */----"
+    Friend Const CcodeComment_FunctionalityEnd As String = "'----/* Functionality  - End */----"
+    Friend Const CcodeComment_CloseVariable As String = "'----/* Close - Variables */----"
+    Friend Const CcodeComment_ReturnExecutionStatus As String = "'----/* Return Execution Status */----"
+    Friend Const CcodeComment_ConstantForFieldNames As String = "'----- Constants For Field Names "
+    Friend Const CcodeComment_CosntForFieldValues As String = "'----- Constants For Field Value of "
+
+
+    Public Const CcodeCreate_Object As String = "Create_Object"
+
+    '/* COnstants for ErrMsg */
+    Public Const CcodeInoutErrMsg As String = "inoutErrMsg"
+    Public Const CcodeErrMsgField As String = "Field"
+    Public Const CcodeErrMsgMissing As String = "Missing"
+    Public Const CcodeErrMsgIndex As String = "Index"
+    Public Const CcodeErrMsgWrong As String = "Wrong"
+    Public Const CcodeErrMsgValue As String = "Value"
+    Public Const CcodeErrMsgCurrent As String = "Current"
+    Public Const CcodeErrMsgKeyAscii As String = "KeyAscii"
+    Public Const CcodeErrMsgBlank As String = "blank"
+    Public Const CcodeErrMsgNonNumeric As String = "non-numeric"
+    Public Const CcodeErrMsgNumericOnly As String = "numeric only"
+    Public Const CcodeErrMsgInvalidDate As String = "invalid Date"
+    Public Const CcodeErrMsgAValidDate As String = "a valid date"
+    Public Const CcodeErrMsgCannotBe As String = "cannot be"
+    Public Const CcodeErrMsgShouldBe As String = "should be"
+    Public Const CcodeErrMsgParameter As String = "Parameter"
+    Public Const CcodeErrMsgMoreThan As String = "more than"
+    Public Const CcodeErrMsgNoRecordFound As String = "No Record Found"
+    Public Const CcodeErrMsgCharacter As String = "character"
+
+
+    Public Const CcodeErr As String = "Error : "
+    Public Const CcodeErrmsg1 As String = "Error: Field missing"
+    Public Const CcodeErrmsg2 As String = "Error: Wrong field index"
+    Public Const CcodeErrmsg3 As String = "Error: current value missing"
+    Public Const CcodeErrmsg4 As String = "Error: keyascii value missing"
+
+    Public Const CcodeErrmsgCannotbeBlank As String = " Cannot be blank "
+    Public Const CcodeErrmsgCannotbeLeftBlank As String = " Cannot be left blank "
+    Public Const CcodeErrmsgCanonotbeLeftBlankPleaseInputZero As String = "Cannot be left blank, Please input 0 (Zero) as default input"
+
+    Public Const CcodeBlank As String = "clsGlobalEnum.CgstrBlank"
+    Public Const CcodeNotDefined As String = "clsGlobalEnum.CgintNotDefined"
+    Public Const CcodeNotDeclared As String = "clsGlobalEnum.CgintNotDeclared"
+    Public Const CcodeCgstrNull As String = "clsGlobalEnum.CgstrNull"
+    Public Const CcodeCgstrTrue As String = "clsGlobalEnum.CgstrTrue"
+    Public Const CcodecgstrFalse As String = "clsGlobalEnum.CgstrFalse"
+
+    '/* Constants used only in the specific following classes */ 
+
+    '-Common Constants for a class
+
+    '-Common Constants for a Method Calls
+    Public Const CcodeCallInitialize As String = "Initialize()"
+    Public Const CcodeCallInitialize_InobjSolution As String = "Initialize(InobjSolutionBO)"
+    Public Const CcodeCallInitialize_InobjApp As String = "Initialize(InobjApp)"
+    Public Const CcodeCallTerminate As String = "Terminate()"
+
+
+    '-Common Constants for Method Names
+    Public Const CcodeNew_InobjSolution As String = "New (byref InobjSolutionBO as clsSolutionBO)"
+    Public Const CcodeNew_InobjApp As String = "New (byref InobjApp as clsApplication)"
+    Public Const CcodeInitialize_UI As String = "Initialize_UI"
+    Public Const CcodeTerminate_UI As String = "Terminate_UI"
+    Public Const CcodeInitialize As String = "Initialize"
+    Public Const CcodeTerminate As String = "Terminate"
+
+    '-Common Constants for Property Names
+    Public Const Ccode_Define_Property_ClassAttribute As String = "Property ClassAttribute() As clsClassAttribute"
+
+    '-Common Constants for a Method Parameters
+    Public Const Ccode_DB_Type As String = "DB_Type"
+
+    '-Common Constants for a Method body
+    '----/* Declaration - Variables */----
+    'Cconstants for - Declaring Variables
+    Public Const CcodeCmstrTableName As String = "CmstrTableName"
+    Public Const CcodeClassName As String = "ClassName"
+    Public Const CcodeTableName As String = "TableName"
+    Public Const CcodeThisClassName As String = "ThisClassName"
+    Public Const CcodeFunction_EnableUserInterface_GUI As String = "Function_EnableUserInterface_GUI"
+    Public Const CcodeFunction_RecordsetReposition_GUI As String = "Function_RecordsetReposition_GUI"
+    Public Const CcodeFunction_CaptureData_GUI As String = "Function_CaptureData_GUI"
+    Public Const CcodeFunction_DisplayData_GUI As String = "Function_DisplayData_GUI"
+
+    '----/* Initialize - Variables */----
+    'Constants for - Default Variables
+    Public Const CcodeExecutionCompleteEqualToFalse As String = "ExecutionComplete = False"
+    Public Const CcodeExecutionCompleteEqualToTrue As String = "ExecutionComplete = True"
+
+    '----/* Functionality  - Between Start  and End*/----
+    'Constants for - GoTo Lables
+    Public Const CcodeLabel_ExitFunction As String = "ExitFunction:"
+
+    'Constants for - Exit and End Routiens
+    Public Const CcodeExit_Function As String = "Exit Function"
+    Public Const CcodeExit_Sub As String = "Exit Sub"
+    Public Const CcodeExit_Property As String = "Exit Property"
+    Public Const CcodeEnd_Function As String = "End Function"
+    Public Const CcodeEnd_Sub As String = "End Sub"
+
+
+    '----/* Close - Variables */----
+
+    '----/* Return Execution Status */----
+    'Constants for - Return values
+    Public Const CcodeReturnTrue As String = "Return True"
+    Public Const CcodeReturnStringReturnValue As String = "Return strReturnValue"
+    Public Const CcodeReturnIntegerReturnValue As String = "Return intReturnValue"
+    Public Const CcodeReturnBooleanReturnValue As String = "Return bolReturnValue"
+
+    '----/* Errorhandler */----
+    'Constants for - Errorhandler
+    Public Const CcodeLable_ErrorHandler As String = "ErrorHandler:"
+    Public Const CcodeGenericErrorHandler_Err As String = "GenericErrorHandler(Err, ThisClassName, ThisFunctionName)"
+    Public Const CcodeSolutionErrorHandler_Err_ThisClass_ThisFunction As String = "mobjSolutionBO.ErrorHandler(Err, ThisClassName, ThisFunctionName )"
+    Public Const CcodeGoToExitFunction As String = "Goto ExitFunction"
+
+
+    'Constants - Element Class - Properties
+    Public Const CcodeFieldCount As String = "FieldCount"
+    Public Const CcodeFieldName As String = "FieldName"
+    Public Const CcodeFieldType As String = "FieldType"
+    Public Const CcodeFieldValue As String = "FieldValue"
+    Public Const CcodePrimaryKeyName As String = "PrimaryKeyName"
+    Public Const CcodePrimaryKeyIndex As String = "PrimaryKeyIndex"
+    Public Const CcodeCompositKeyName As String = "CompositeKeyName"
+    Public Const CcodeCompositKey As String = "CompositeKey"
+
+    'Properties
+    Public Const CcodeElement As String = "Element"
+    Public Const CcodeAutoValidate As String = "AutoValidate"
+    Public Const CcodeDeleteSQL As String = "DeleteSQL"
+    Public Const CcodeDeleteRecordsetSQL As String = "DeleteRecordsetSQL"
+    Public Const CcodeInsertSQL As String = "InsertSQL"
+    Public Const CcodeUpdateSQL As String = "UpdateSQL"
+    Public Const CcodeSelectSQL As String = "SelectSQL"
+    Public Const CcodeRS As String = "RS"
+
+
+    '/* Constants Collection Class -  Function Name  */
+    '/* CRUDS Functions
+    Public Const CcodeAdd As String = "Add"
+    Public Const CcodeAddressOf As String = "AddressOf"
+    Public Const CcodeCancel As String = "Cancel"
+    Public Const CcodeDelete As String = "Delete"
+    Public Const CcodeDeleteRecordset As String = "DeleteRecordset"
+    Public Const CcodeEdit As String = "Edit"
+    Public Const CcodeSave As String = "Save"
+
+    '/* Collection Class Methods
+    Public Const CcodeInitializeCO As String = "Initialize_CO"
+    Public Const CcodeInitializeBO As String = "Initialize_BO"
+    Public Const CcodeGetNewPrimaryKeyVal As String = "GetNewPrimaryKeyVal"
+    Public Const CcodeRefreshElement As String = "RefreshElement"
+    Public Const CcodeRs_GridDataFill As String = "Rs_GridDataFill"
+    Public Const CcodeSetDefaultFieldValue As String = "SetDefaultFieldValue"
+    Public Const CcodeSetNewPrimaryKey As String = "SetNewPrimaryKey"
+    Public Const CcodeValidateInputData As String = "ValidateInputData"
+
+    '/* Constants Collection Class -  code inside Functions  */
+    Public Const CcodeCollection_Add As String = "CAdd"
+    Public Const CcodeCollection_Cancel As String = "CCancel"
+    Public Const CcodeCollection_Delete As String = "CDelete"
+    Public Const CcodeCollection_DeleteRecordset As String = "CDeleteRecordset"
+    Public Const CcodeCollection_Edit As String = "CEdit"
+    Public Const CcodeCollection_Save As String = "CSave"
+
+    'Public Const CcodeCollection_Add As String = "Collection_Add"
+    'Public Const CcodeCollection_Cancel As String = "Collection_Cancel"
+    'Public Const CcodeCollection_Delete As String = "Collection_Delete"
+    'Public Const CcodeCollection_DeleteRecordset As String = "Collection_DeleteRecordset"
+    'Public Const CcodeCollection_Edit As String = "Collection_Edit"
+    'Public Const CcodeCollection_Save As String = "Collection_Save"
+
+    '/* Constants Collection Class -  code inside Functions - Recordset function names and calls */
+    Public Const CcodeRs_BusinessObject As String = "RS_BusinessObject"
+    Public Const CCodeRs_BusinessObject_Multiuser As String = "RS_BusinessObject_Multiuser"
+    Public Const CcodeRs_BookmarkField As String = "RS_BookmarkField"
+    Public Const CcodeRs_Bookmark As String = "RS_Bookmark"
+    Public Const CcodeRs_Initialize As String = "RS_Initialize"
+    Public Const CcodeRs_Connection As String = "RS_Connection"
+    Public Const CcodeRs_Refresh As String = "RS_Refresh"
+    Public Const CcodeRs_EOF As String = "RS_Eof"
+    Public Const CcodeRs_BOF As String = "RS_Bof"
+    Public Const CcodeRs_FieldValue As String = "RS_FieldValue"
+    Public Const CcodeRs_NewPrimaryKey As String = "RS_NewPrimaryKey"
+    Public Const CcodeRs_RecordSource As String = "RS_RecordSource"
+    Public Const CcodeRs_EditMode As String = "RS_EditMode"
+    Public Const CcodeRs_AddNew As String = "Rs_AddNew"
+    Public Const CcodeRs_Field As String = "RS_Field"
+    Public Const CcodeRs_Find As String = "RS_Find"
+    Public Const CcodeRs_MoveFirst As String = "RS_MoveFirst"
+    Public Const CcodeRs_MoveLast As String = "RS_MoveLast"
+    Public Const CcodeRs_MoveNext As String = "RS_MoveNext"
+    Public Const CcodeRs_MovePrevious As String = "RS_MovePrevious"
+    Public Const CcodeRs_FieldCollection As String = "RS_FieldsCollection"
+    Public Const CcodeRs_SelectWhere As String = "RS_SelectWhere"
+    Public Const CcodeRs_SelectPhrase As String = "RS_SelectPhrase"
+    Public Const CcodeRs_AbsolutePosition As String = "RS_AbsolutePosition"
+    Public Const CcodeRs_RecordsCount As String = "RS_RecordCount"
+    Public Const CcodeConnectionString As String = "ConnectionString"
+
+    'Implements interface
+    Public Const CcodeErrMessage As String = "ErrMessage"
+    Public Const CcodeClientHandle As String = "ClientHandle"
+    Public Const CcodeClientIpAddress As String = "ClientIpAddress"
+    Public Const CcodeLockServer As String = "LockServer"
+    Public Const CcodeHandled As String = "Handled"
+
+    Public Const CcodeCollectionErrmessage As String = "Collection_ErrMessage"
+    Public Const CcodeCollectionClientHandle As String = "Collection_ClientHandle"
+    Public Const CcodeCollectionIpAddress As String = "Collection_ClientIpAddress"
+    Public Const CcodeCollectionLockServer As String = "Collection_LockServer"
+
+    Friend Const CcodeHandles As String = "Handles"
+
+    'Constants
+    Public Const CcodeConstant_SaveMessage As String = "Private Const CgstrSaveMessage As String = " & """Do you really want To save this record ?"""
+    Public Const CcodeConstant_MsgboxCaption As String = "Private Const CgstrMsgboxCaption As String = " & """ Confirmation """
+    Public Const CcodeConstant_DeleteMessage As String = "Private Const CgstrDeleteMessage As String = " & """ Are you sure you want To delete this record ?"""
+
+    'Variables
+    Public Const CcodemobjGUI As String = "mobjGUI"
+    Public Const CcodemobjchkGrid As String = "mobjchkGrid"
+    'Public Const CcodefrmGrid As String = "frmGrid"
+
+    'Function Name
+    Public Const CcodecmdAddNew_Click As String = "cmdAddNew_Click"
+    Public Const CcodecmdCancel_Click As String = "cmdCancel_Click"
+    Public Const CcodecmdEdit_Click As String = "cmdEdit_Click"
+    Public Const CcodecmdDelete_Click As String = "cmdDelete_Click"
+    Public Const CcodecmdSave_Click As String = "cmdSave_Click"
+
+    Public Const CcodecmdMoveFirst_Click As String = "cmdMoveFirst_Click"
+    Public Const CcodecmdMovePrevious_Click As String = "cmdMovePrevious_Click"
+    Public Const CcodecmdMoveNext_Click As String = "cmdMoveNext_Click"
+    Public Const CcodecmdMoveLast_Click As String = "cmdMoveLast_Click"
+
+    Public Const CcodecmdClose_Click As String = "cmdClose_Click"
+    Public Const CcodecmdGoToId_Click As String = "cmdGoToId_Click"
+    Public Const CCodecmdRefresh_Click As String = "cmdRefresh_Click"
+
+
+    Public Const CcodechkGrid_CheckedChanged As String = "chkGrid_CheckedChanged"
+    Public Const CcodelblCloseForm_Click As String = "lblCloseForm_Click"
+    Public Const CcodetxtGoToId_KeyPress As String = "txtGoToId_KeyPress"
+
+
+    Public Const CcodeButton_Click_EventParameters As String = "sender As Object, e As EventArgs"
+    Public Const CcodeLabel_Click_EventParameters As String = "sender As Object, e As EventArgs"
+    Public Const CcodeText_Keypress_EventParameters As String = "sender As Object, e As KeyPressEventArgs"
+
+
+    '/* Constants for Function / Properties */
+    Public Const CcodeCallInitializeComponent As String = "InitializeComponent()"
+
+    '/* Constant for ClassName Extension */
+    Public Const CcodeFormSufix As String = ".frm"
+    Public Const CcodeVBFileExtension As String = ".vb"
+    Public Const CcodeVBDesingnerFileExtension As String = ".Designer.vb"
+
+    'Vb Reserver Words
+
+    Public Const CcodeMeGetTypeName As String = "Me.GetType().Name" ' Get the Name of the Current Class.
+    Public Const CcodeMsgBoxTypeInformation As String = "vbInformation"
+    Public Const CcodeMsgBoxTypeCritical As String = "vbCritical"
+    Public Const CcodeMsgboxStyle_Information As String = "MsgBoxStyle.Information"
+
+    Public Const CcodeNew As String = "New"
+    Public Const CcodeDim As String = "Dim"
+    Public Const CcodeTrim As String = "Trim"
+    Public Const CcodeReDim As String = "ReDim"
+
+    Public Const CcodeConstant As String = "Const"
+    Public Const CcodeFunction As String = "Function"
+    Public Const CcodeSub As String = "Sub"
+    Public Const CcodeDelegates As String = "Delegates"
+    Public Const CcodeDelegate As String = "Delegate"
+
+    Public Const CcodeAs As String = "As"
+    Public Const CcodeBrackOpen As String = "("
+    Public Const CcodeBrackClose As String = ")"
+    Public Const CcodeConcatenate As String = "&"
+
+    Public Const CcodeOne As String = "1"
+    Public Const CcodeTwo As String = "2"
+    Public Const CcodeZero As String = "0"
+    Public Const CcodeMinusOne As String = "- 1"
+    Public Const CcodeMinusTwo As String = "- 2"
+    Public Const CcodePlusOne As String = "+ 1"
+    '    Public Const CcodeCglngNotDefined As String = "0"
+    Public Const CcodeCglngNotDeclared As String = "-1"
+    Public Const CcodePlus As String = "+"
+    Public Const CcodeMinus As String = "-"
+
+
+    Public Const CcodeWith As String = "With"
+    Public Const CcodeEndWith As String = "End With"
+    Public Const CcodeToString As String = "ToString"
+    Public Const CcodeMe As String = "Me"
+    Public Const CcodeEnd As String = "End"
+    Public Const CcodeIsNothing As String = "IsNothing"
+    Public Const CcodeIsNumeric As String = "IsNumeric"
+    Public Const CcodeIsDate As String = "IsDate"
+    Public Const CcodeMsgBox As String = "MsgBox"
+    Public Const CcodeImplements As String = "Implements"
+    Public Const CcodeNothing As String = "Nothing"
+    Public Const CcodeObject As String = "Object"
+    Public Const CcodeMyBase As String = "MyBase"
+    Public Const CcodeInherits As String = "Inherits"
+    Public Const CcodeByVal As String = "ByVal"
+    Public Const CcodeByRef As String = "ByRef"
+    Public Const CcodeAnd As String = "And"
+    Public Const CcodeOr As String = "Or"
+    Public Const CcodeLen As String = "Len"
+    Public Const CcodeNull As String = "Null"
+    Public Const CcodeCall As String = "Call"
+    Public Const CcodeGetType As String = "GetType"
+
+    Public Const CcodeDo As String = "Do"
+    Public Const CcodeWhile As String = "While"
+    Public Const CcodeTo As String = "To"
+    Public Const CcodeEach As String = "Each"
+    Public Const CcodeIn As String = "In"
+    Public Const CcodeLoop As String = "Loop"
+    Public Const CcodeSelectCase As String = "Select Case"
+    Public Const CcodeCase As String = "Case"
+    Public Const CcodeEndSelect As String = "End Select"
+    Public Const CcodeIs As String = "Is"
+    Public Const CcodeIf As String = "If"
+    Public Const CcodeIIf As String = "IIf"
+    Public Const CcodeElse As String = "Else"
+    Public Const CcodeElseIf As String = "ElseIf"
+    Public Const CcodeEndIf As String = "End If"
+    Public Const CcodeThen As String = "Then"
+    Public Const CcodeFor As String = "For"
+    Public Const CcodeNext As String = "Next"
+    Public Const CcodeNot As String = "Not"
+    Public Const CcodeMax As String = "Max"
+
+    Public Const CcodeTrue As String = "True"
+    Public Const CcodeFalse As String = "False"
+
+    ' Signs
+    Public Const CcodeDot As String = "."
+    Public Const CcodeComma As String = ","
+    Public Const CcodeColon As String = ":"
+    Public Const CcodeGreaterThan As String = ">"
+    Public Const CcodeGreaterThanEqualTo As String = ">="
+    Public Const CcodeLessThan As String = "<"
+    Public Const CcodeLessThaneEqualTo As String = "<="
+    Public Const CcodeEqualTo As String = "="
+    Public Const CcodeNotEqualTo As String = "<>"
+
+    Public Const CcodeStartEndString As String = """"
+    Public Const CcodeSingleCote As String = "'"
+    Public Const CcodeSingleCoteInDoubleCote As String = """"
+    Public Const CcodeCommentPrefix As String = " '/*"
+    Public Const CcodeCommentSufix As String = "*/"
+
+    ' Properties of objects / controls in VB.NET
+    Public Const CgstrText As String = "Text"
+
+
+    'Class */
+    Public Const CcodeClass As String = "Class"
+    Public Const CcodeEndClass As String = "End Class"
+
+    'Convertors
+
+
+    '/* Constant for Data Types - System Classes  VB.NET*/
+    Public Const CcodeSystem As String = "System"
+    Public Const CcodeComponentModel As String = "ComponentModel"
+    Public Const CcodeIContainer As String = "IContainer"
+
+    '/* Constant for Data Types - Database VB.NET*/
+    'Do not use this set, Replace this set  
+    Public Const CcodeString As String = "String"
+    Public Const CcodeLong As String = "Long"
+    Public Const CcodeInteger As String = "Integer"
+    Public Const CcodeDouble As String = "Double"
+    Public Const CcodeDecimal As String = "Decimal"
+    Public Const CcodeBoolean As String = "Boolean"
+    Public Const CcodeVariant As String = "Variant"
+    Public Const CcodeDate As String = "Date"
+    'Do not use this set, Replace this set  
+
+    '/* Constant for Data Type Conversion  VB.NET*/
+    Public Const CcodeCbool As String = "CBool"
+    Public Const CcodeCDate As String = "CDate"
+    Public Const CcodeCLng As String = "CLng"
+    Public Const CcodeCStr As String = "CStr"
+
+    '-Form Designer
+    Public Const CcodeSystemWindowsFormsForm As String = "System.Windows.Forms.Form"
+    Public Const CcodeSystemWindowsFormsGroupBox As String = "System.Windows.Forms.GroupBox"
+    Public Const CcodeSystemWindowsFormsDataGridView As String = "System.Windows.Forms.DataGridView"
+    Public Const CcodeSystemWindowsFormsListView As String = "System.Windows.Forms.ListView"
+    Public Const CcodeSystemWindowsFormsTextBox As String = "System.Windows.Forms.TextBox"
+    Public Const CcodeSystemWindowsFormsLabel As String = "System.Windows.Forms.Label"
+    Public Const CcodeSystemWindowsFormsCombo As String = "System.Windows.Forms.ComboBox"
+    Public Const CcodeSystemWindowsFormsButton As String = "System.Windows.Forms.Button"
+    Public Const CcodeSystemWindowsFormCheckBox As String = "System.Windows.Forms.CheckBox"
+    Public Const CCodeSystemWindowsFormGridView As String = "System.Windows.Forms.GridView"
+    Public Const CCodeSystemWindowsFormFrame As String = "System.Windows.Forms.Frame"
+
+    Public Const CcodeSystemComponentModelIcontainer As String = "System.ComponentModel.IContainer"
+    Public Const CcodeSysemComponentModelComponentResoourceManager As String = "System.ComponentModel.ComponentResourceManager"
+
+    Public Const CcodeSystemDrawingPoint As String = "System.Drawing.Point"
+    Public Const CcodeSystemDrawingSize As String = "System.Drawing.Size"
+
+    Public Const CcodeDispose As String = "Dispose"
+    Public Const CcodeDisposing As String = "Disposing"
+    Public Const CcodeTry As String = "Try"
+    Public Const CcodeAndAlso As String = "AndAlso"
+    Public Const CcodeIsNot As String = "IsNot"
+    Public Const CcodeFinally As String = "Finally"
+    'Public Const CcodeEndTry As String = "End Try"
+    Public Const CcodeDiagnostics As String = "Diagnostics"
+    'Public Const CcodeDebuggerNonUserCode As String = "DebuggerNonUserCode"
+    'Public Const CcodeDebuggerStepThrough As String = "DebuggerStepThrough"
+    Public Const CcodeWithEvents As String = "WithEvents"
+    Public Const CcodeInitializeComponent As String = "InitializeComponent"
+    Public Const CcodeSuspendLayout As String = "SuspendLayout"
+    Public Const CcodeResumeLayout As String = "ResumeLayout"
+    Public Const CcodePerformLayout As String = "PerformLayout"
+    'Public Const CcodeControls As String = "Controls"
+    Public Const CcodeResources As String = "Resources"
+
+    Public Const CcodeComponents As String = "Components"
+
+    Public Const CcodeDesignerGenerated As String = "<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _"
+    Public Const CcodeDebuggerNonUserCode As String = "<System.Diagnostics.DebuggerNonUserCode()> _"
+    Public Const CcodeDebuggerStepThrough As String = "<System.Diagnostics.DebuggerStepThrough()> _"
+
+    Public Const CcodeForm As String = "Form"
+    Public Const CcodeFormMain As String = "FormMain"
+    Public Const CcodeForm_Parent As String = "Form_Parent"
+    'Public Const CcodeForm_Main As String = "Form_Main"
+    Public Const CcodeGroupBox As String = "GroupBox"
+    Public Const CcodeDataGridView As String = "DataGridView"
+    Public Const CcodeListView As String = "ListView"
+    Public Const CcodeTextBox As String = "TextBox"
+    Public Const CcodeLabel As String = "Label"
+    Public Const CcodeComboBox As String = "ComboBox"
+    Public Const CcodeButton As String = "Button"
+    Public Const CcodeCheckBox As String = "CheckBox"
+    Public Const CcodeCheckState As String = "CheckState"
+    Public Const CcodeChecked As String = "Checked"
+    Public Const CcodeUnchecked As String = "Unchecked"
+    Public Const CcodeGridView As String = "GridView"
+    Public Const CcodeFrame As String = "Frame"
+
+    'Control - Attributes
+    Public Const CcodeLocation As String = "Location"
+    Public Const CcodeName As String = "Name"
+    Public Const CcodeSize As String = "Size"
+    Public Const CcodeAutoSize As String = "AutoSize"
+
+    'Syntax for - Property
+    Public Const CcodeProperty As String = "Property"
+    Public Const CcodeReadonly As String = "ReadOnly"
+    Public Const CcodeWriteonly As String = "WriteOnly"
+    Public Const CcodeGet As String = "Get"
+    Public Const CcodeSet As String = "Set"
+    Public Const CcodeEndGet As String = "End Get"
+    Public Const CcodeEndSet As String = "End Set"
+    Public Const CcodeReturn As String = "Return"
+    Public Const CcodeEndProperty As String = "End Property"
+
+    'Constatnts for - Function Names
+    Public Const CcodeSubNew As String = "New()"
+    Public Const CcodeSubFinalize As String = "Finalize()"
+    Public Const CcodeFinalize As String = "Finalize"
+
+
+    Public Const CcodeOnErrorGoTo As String = "On Error GoTo ErrorHandler"
+
+    'Syntax for - Events
+
+    '/* Constant for Data Types - MS Access */
+    Public Const CcodeYesNo As String = "Yes/No"
+    Public Const CcodeText As String = "Text"
+    Public Const CcodeDateTime As String = "Date/Time"
+    Public Const CcodeMemo As String = "Memo"
+
+
+    Public Const CcodefrmMain As String = "frmMain"
+
+#Region "Constants - Visual Basic.Net - Source Code - Reserve Words - Control Types - To Review and Remove"
+    '    Public Const CcodeControlForm As String = "Form"
+    '    Public Const CcodeControlGroupBox As String = "GroupBox"
+    '    Public Const CcodeControlDataGridView As String = "DataGridView"
+    '    Public Const CcodeControlListView As String = "ListVeiw"
+    '    Public Const CCodeControlClassTextbox As String = "TextBox"
+    '    Public Const CCodeControlClassLabel As String = "Label"
+    '    Public Const CcodeControlClassCombo As String = "ComboBox"
+    '    Public Const CcodeControlClassButon As String = "Button"
+    '    Public Const CCodeControlCheckBox As String = "CheckBox"
+
+
+    '/* Constants Fields Class -  Function Calls  */
+
+    'Syntax - Miscellaneous
+    '    Public Const CcodeError As String = "Error"
+    'Public Const CcodeOn As String = "On"
+
+    '---------------Vb Syntax - User defined Words - End --------------------------------------------------
+    '---------------MSAccess Syntax - Reserver Words - Start ----------------------------------------------
+    '---------------MSAccess Syntax - Reserver Words - End ----------------------------------------------
+
+    '/* Constant for Property - Functions */
+
+    'Public Const CcodeRecordset As String = "Recordset"
+    'Public Const CcodeRsCursorLocation As String = "Recordset_CursorLocation"
+    'Public Const CcodeRsMoveFirst As String = "Recordset_MoveFirst"
+    'Public Const CcodeRsMoveNext As String = "Recordset_MoveNext"
+    'Public Const CcodeRsMovePrevious As String = "Recordset_MovePrevious"
+    'Public Const CcodeRsMoveLast As String = "Recordset_MoveLast"
+    'Public Const CcodeRsAbsolutePosition As String = "Recordset_AbsolutePosition"
+    'Public Const CcodeRsRecordCount As String = "Recordset_Recordcount"
+    'Public Const CcodeRsListDataRefresh As String = "Recordset_ListDataRefresh"
+    'Public Const CcodeRsGridDataFill As String = "Recordset_GridDataFill"
+    'Public Const CcodeRsListDataFill As String = "Recordset_ListDataFill"
+    'Public Const CcodeRsRecordsetFind As String = "Recordset_Find"
+    'Public Const CcodeRsRecordsetSelectWhere As String = "Recordset_SelectWhere"
+
+    '/* Constants for Collection Class Functions */
+    'Public Const CcodeClass_Initialize As String = "Class_Initialize"
+    'Public Const CcodeClass_Terminate As String = "Class_Terminate"
+    'Public Const CcodeCollections_ActiveConnection As String = "Collections_ActiveConnection"
+    'Public Const CcodeCollections_AutoValidate As String = "Collections_AutoValidate"
+    'Public Const CcodeCollections_Cancel As String = "Collections_Cancel"
+    'Public Const CcodeCollections_Delete As String = "Collections_Delete"
+    'Public Const CcodeCollections_Edit As String = "Collections_Edit"
+    'Public Const CcodeCollections_Intialize As String = "Collections_Initialize"
+    'Public Const CcodeCollections_RefreshElement As String = "Collections_RefreshElement"
+    'Public Const CcodeCollections_Save As String = "Collections_Save"
+    'Public Const CcodeCollections_Validate As String = "Collections_Validate"
+    'Public Const CcodeRefreshRecordSource As String = "RefreshRecordsource"
+    'Public Const CcodeSelectSqlIndex As String = "SelectSqlIndex"
+    'Public Const CcodeSelectFields As String = "SelectFields"
+
+    'Constants - Common
+    'Public Const CcodeOptional As String = "Optional"
+    'Public Const CcodeMe As String = "Me"
+    'Public Const CcodeIsMissing As String = "IsMissing"
+    'Public Const CcodeIsNumeric As String = "IsNumeric"
+    'Public Const CcodeIsDate As String = "IsDate"
+
+    'Public Const CintTabLength As Short = 4
+    'Public Const Cint1Tab As Short = CintTabLength * 1
+    'Public Const Cint2Tabs As Short = CintTabLength * 2
+    'Public Const Cint3Tabs As Short = CintTabLength * 3
+
+    '/* Constants - Friend */
+    '/* Constants - Protected */
+    '/* Constants - Private */
+
+#End Region
+
+
+End Module
+
+
+---start of actual class file for clsBuyer----
+
+Public Class clsBuyer
+
+#Region "Inherits"
+#End Region
+
+#Region "Implements"
+     Implements ifaBusinessElement
+#End Region
+
+#Region "Important Comments"
+
+'* CodeFactory    Version  : CodeFactory_V_11_R_02.00.11
+'* Template Class Version  : 10 
+'* Created on              : Wednesday, 14 May, 2025 at 06:50:57 PM
+'************** Code Grouping Convention***********
+'*   Inherits                                     *
+'*   Implements                                   *
+'*   Declares                                     *
+'*   Delegates                                    *
+'*   Constants                                    *
+'*   Enumerics                                    *
+'*   Variables                                    *
+'*   Class Constructor                            *
+'*   Class Destructor                             *
+'*   Properties                                   *
+'*   Functions                                    *
+'*   Procedures                                   *
+'*   Events                                       *
+'*   Events_Functions                             *
+'*   BR_Functions                                 *
+'*   SourceCode_ToRemove                          *
+'*   SourceCode_ToTest                            *
+'**************************************************
+
+'************** Declaration Priority **************
+' Acsess Modifier Priority
+'      Public  
+'      Friend  
+'      Protected  
+'      Private  
+
+' Declaration Priority
+'      Object Constants / Variables  
+'      Other  Constants / Variables  
+
+' AccessRights Priority
+'      Readonly  
+'      Writeonly  
+'      ReadAndWrite  
+'************** Declaration Priority **************
+#End Region
+
+#Region "COM GUIDs"
+    ' These  GUIDs provide the COM identity for this class 
+    ' and its COM interfaces. If you change them, existing 
+    ' clients will no longer be able to access the class.
+#End Region
+
+#Region "Declares"
+    '/* Declare - Public */
+    '/* Declare - Friend */
+    '/* Declare - Protected */
+    '/* Declare - Private */
+#End Region
+
+#Region "Delegates"
+    '/* Delegate - Sub */
+    '/* Delegate - Function */
+#End Region
+
+#Region "Constants"
+    '/* Constant - Public */ (There should not be any public constants, create properties instead)
+    'Constant for Field Length
+    Public Const CmintBuyerId_Length As Integer = clsGlobalEnum.enumFieldLength.eLength4
+    Public Const CmintBuyerName_Length As Integer = clsGlobalEnum.enumFieldLength.eLength100
+    Public Const CmintAddress1_Length As Integer = clsGlobalEnum.enumFieldLength.eLength50
+    Public Const CmintAddress2_Length As Integer = clsGlobalEnum.enumFieldLength.eLength50
+    Public Const CmintAddress3_Length As Integer = clsGlobalEnum.enumFieldLength.eLength50
+    Public Const CmintAddress4_Length As Integer = clsGlobalEnum.enumFieldLength.eLength50
+    Public Const CmintPhone1_Length As Integer = clsGlobalEnum.enumFieldLength.eLength25
+    Public Const CmintPhone2_Length As Integer = clsGlobalEnum.enumFieldLength.eLength25
+    Public Const CmintMobilePhone_Length As Integer = clsGlobalEnum.enumFieldLength.eLength25
+
+    'Constant for Field DataType
+    Public Const CmintBuyerId_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eInteger
+    Public Const CmintBuyerName_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintAddress1_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintAddress2_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintAddress3_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintAddress4_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintPhone1_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintPhone2_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+    Public Const CmintMobilePhone_DataType As clsGlobalEnum.enumDataTypes  = clsGlobalEnum.enumDataTypes.eVarWChar
+
+    '/* Constant - Friend */
+    '/* Constant - Protected */
+    '/* Constant - Private */
+    'Constant for Field Count
+    Private Const mlngFieldCount As Long = 9
+
+    'Constant for Field names
+    Private Const CmstrBuyerId As String = "BuyerId"
+    Private Const CmstrBuyerName As String = "BuyerName"
+    Private Const CmstrAddress1 As String = "Address1"
+    Private Const CmstrAddress2 As String = "Address2"
+    Private Const CmstrAddress3 As String = "Address3"
+    Private Const CmstrAddress4 As String = "Address4"
+    Private Const CmstrPhone1 As String = "Phone1"
+    Private Const CmstrPhone2 As String = "Phone2"
+    Private Const CmstrMobilePhone As String = "MobilePhone"
+
+#End Region
+
+#Region "Enumerics"
+    '/* Enumeric - Public */
+    'Enumerics for Field
+    Public Enum enumFieldsBuyer
+        eBuyerId = 0
+        eBuyerName = 1
+        eAddress1 = 2
+        eAddress2 = 3
+        eAddress3 = 4
+        eAddress4 = 5
+        ePhone1 = 6
+        ePhone2 = 7
+        eMobilePhone = 8
+    End Enum
+
+    '/* Enumeric - Friend */
+    '/* Enumeric - Protected */
+    '/* Enumeric - Private */
+#End Region
+
+#Region "Variables"
+#Region "Variables - Property"
+    '/* Variable - Property - Public - Object */
+    '/* Variable - Property - Friend - Object */
+    '/* Variable - Property - Protected - Object */
+    '/* Variable - Property - Private - Object */
+    '/* Variable - Property - Public */ (There should not be any public variable, create properties instead)
+    '/* Variable - Property - Friend */
+    '/* Variable - Property - Protected */
+    '/* Variable - Property - Private */
+
+    ' Variable for Fields
+    Private mstrBuyerId As String
+    Private mstrBuyerName As String
+    Private mstrAddress1 As String
+    Private mstrAddress2 As String
+    Private mstrAddress3 As String
+    Private mstrAddress4 As String
+    Private mstrPhone1 As String
+    Private mstrPhone2 As String
+    Private mstrMobilePhone As String
+
+#End Region
+
+#Region "Variables - General"
+    '/* Variable - General - Public - Object */
+    '/* Variable - General - Friend - Object */
+    '/* Variable - General - Protected - Object */
+    '/* Variable - General - Private - Object */
+    Private mobjSolutionBO As clsSolutionBO'Default Design
+
+    '/* Variable - General - Public */ (There should not be any public variable, create properties instead)
+    '/* Variable - General - Friend */
+    '/* Variable - General - Protected */
+    '/* Variable - General - Private */
+#End Region
+
+    '/* Variable for Composite Keys */
+
+#End Region
+
+#Region "Class Constructor"
+    '/* Class Constructor - New */
+    ' A creatable COM class must have a Public Sub New() 
+    ' with no parameters, otherwise, the class will not be 
+    ' registered in the COM registry and cannot be created  
+    ' via CreateObject.
+    Public Sub New (byref InobjSolutionBO as clsSolutionBO)
+        MyBase.New()
+    Initialize(InobjSolutionBO)
+    End Sub
+#End Region
+
+#Region "Class Destructor"
+    '/* Class Destructor - Finalizes */
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+
+#End Region
+
+#Region "Properties"
+    '/* Property - Public - Readonly */
+    Public ReadOnly Property FieldCount() As Long Implements ifaBusinessElement.FieldCount
+        Get
+        Return mlngFieldCount
+        End Get
+    End Property
+    Public ReadOnly Property FieldName(ByVal InintIndex As Integer) As String Implements ifaBusinessElement.FieldName
+        Get
+        Dim strReturnValue As String
+    
+        Select Case InintIndex
+            Case enumFieldsBuyer.eBuyerId
+                strReturnValue = CmstrBuyerId
+            Case enumFieldsBuyer.eBuyerName
+                strReturnValue = CmstrBuyerName
+            Case enumFieldsBuyer.eAddress1
+                strReturnValue = CmstrAddress1
+            Case enumFieldsBuyer.eAddress2
+                strReturnValue = CmstrAddress2
+            Case enumFieldsBuyer.eAddress3
+                strReturnValue = CmstrAddress3
+            Case enumFieldsBuyer.eAddress4
+                strReturnValue = CmstrAddress4
+            Case enumFieldsBuyer.ePhone1
+                strReturnValue = CmstrPhone1
+            Case enumFieldsBuyer.ePhone2
+                strReturnValue = CmstrPhone2
+            Case enumFieldsBuyer.eMobilePhone
+                strReturnValue = CmstrMobilePhone
+            Case Else
+                strReturnValue = clsGlobalEnum.CgstrBlank
+        End Select
+    
+         Return strReturnValue
+        End Get
+    End Property
+    Public ReadOnly Property FieldType(ByVal InintIndex As Integer) As clsGlobalEnum.enumDataTypes Implements ifaBusinessElement.FieldType
+        Get
+        Dim intReturnValue As clsGlobalEnum.enumDataTypes
+    
+        Select Case InintIndex
+            Case enumFieldsBuyer.eBuyerId
+                intReturnValue = CmintBuyerId_DataType
+            Case enumFieldsBuyer.eBuyerName
+                intReturnValue = CmintBuyerName_DataType
+            Case enumFieldsBuyer.eAddress1
+                intReturnValue = CmintAddress1_DataType
+            Case enumFieldsBuyer.eAddress2
+                intReturnValue = CmintAddress2_DataType
+            Case enumFieldsBuyer.eAddress3
+                intReturnValue = CmintAddress3_DataType
+            Case enumFieldsBuyer.eAddress4
+                intReturnValue = CmintAddress4_DataType
+            Case enumFieldsBuyer.ePhone1
+                intReturnValue = CmintPhone1_DataType
+            Case enumFieldsBuyer.ePhone2
+                intReturnValue = CmintPhone2_DataType
+            Case enumFieldsBuyer.eMobilePhone
+                intReturnValue = CmintMobilePhone_DataType
+        End Select
+    
+         Return intReturnValue
+        End Get
+    End Property
+    Public ReadOnly Property FieldType(ByVal InstrFieldName As String) As clsGlobalEnum.enumDataTypes Implements ifaBusinessElement.FieldType
+        Get
+        Dim intReturnValue As clsGlobalEnum.enumDataTypes
+    
+        Select Case InstrFieldName
+            Case CmstrBuyerId
+                intReturnValue = CmintBuyerId_DataType
+            Case CmstrBuyerName
+                intReturnValue = CmintBuyerName_DataType
+            Case CmstrAddress1
+                intReturnValue = CmintAddress1_DataType
+            Case CmstrAddress2
+                intReturnValue = CmintAddress2_DataType
+            Case CmstrAddress3
+                intReturnValue = CmintAddress3_DataType
+            Case CmstrAddress4
+                intReturnValue = CmintAddress4_DataType
+            Case CmstrPhone1
+                intReturnValue = CmintPhone1_DataType
+            Case CmstrPhone2
+                intReturnValue = CmintPhone2_DataType
+            Case CmstrMobilePhone
+                intReturnValue = CmintMobilePhone_DataType
+        End Select
+    
+         Return intReturnValue
+        End Get
+    End Property
+
+    Public ReadOnly Property PrimaryKeyIndex() As Integer
+    Get
+        Return enumFieldsBuyer.eBuyerId
+    End Get
+    End Property
+    Public ReadOnly Property PrimaryKeyName() As String
+    Get
+        Return CmstrBuyerId
+    End Get
+    End Property
+    '/* Property - Public - Writeonly */
+    '/* Property - Public - Read & Write */
+    Public Property FieldValue(ByVal InintIndex As Integer) As String Implements ifaBusinessElement.FieldValue
+        Get
+            Dim strReturnValue As String
+            strReturnValue = clsGlobalEnum.CgstrBlank
+
+            Select Case InintIndex
+                Case enumFieldsBuyer.eBuyerId
+                    strReturnValue = BuyerId
+                Case enumFieldsBuyer.eBuyerName
+                    strReturnValue = BuyerName
+                Case enumFieldsBuyer.eAddress1
+                    strReturnValue = Address1
+                Case enumFieldsBuyer.eAddress2
+                    strReturnValue = Address2
+                Case enumFieldsBuyer.eAddress3
+                    strReturnValue = Address3
+                Case enumFieldsBuyer.eAddress4
+                    strReturnValue = Address4
+                Case enumFieldsBuyer.ePhone1
+                    strReturnValue = Phone1
+                Case enumFieldsBuyer.ePhone2
+                    strReturnValue = Phone2
+                Case enumFieldsBuyer.eMobilePhone
+                    strReturnValue = MobilePhone
+            End Select
+            Return strReturnValue
+        End Get
+        Set (ByVal Value As String)
+            Select Case InintIndex
+                Case enumFieldsBuyer.eBuyerId
+                    BuyerId = Value
+                Case enumFieldsBuyer.eBuyerName
+                    BuyerName = Value
+                Case enumFieldsBuyer.eAddress1
+                    Address1 = Value
+                Case enumFieldsBuyer.eAddress2
+                    Address2 = Value
+                Case enumFieldsBuyer.eAddress3
+                    Address3 = Value
+                Case enumFieldsBuyer.eAddress4
+                    Address4 = Value
+                Case enumFieldsBuyer.ePhone1
+                    Phone1 = Value
+                Case enumFieldsBuyer.ePhone2
+                    Phone2 = Value
+                Case enumFieldsBuyer.eMobilePhone
+                    MobilePhone = Value
+            End Select
+        End Set
+    End Property
+    Public Property BuyerId() As String
+        Get
+            Return mstrBuyerId
+        End Get
+        Set (ByVal Value As String)
+            mstrBuyerId = Value
+        End Set
+    End Property
+    Public Property BuyerName() As String
+        Get
+            Return mstrBuyerName
+        End Get
+        Set (ByVal Value As String)
+            mstrBuyerName = Value
+        End Set
+    End Property
+    Public Property Address1() As String
+        Get
+            Return mstrAddress1
+        End Get
+        Set (ByVal Value As String)
+            mstrAddress1 = Value
+        End Set
+    End Property
+    Public Property Address2() As String
+        Get
+            Return mstrAddress2
+        End Get
+        Set (ByVal Value As String)
+            mstrAddress2 = Value
+        End Set
+    End Property
+    Public Property Address3() As String
+        Get
+            Return mstrAddress3
+        End Get
+        Set (ByVal Value As String)
+            mstrAddress3 = Value
+        End Set
+    End Property
+    Public Property Address4() As String
+        Get
+            Return mstrAddress4
+        End Get
+        Set (ByVal Value As String)
+            mstrAddress4 = Value
+        End Set
+    End Property
+    Public Property Phone1() As String
+        Get
+            Return mstrPhone1
+        End Get
+        Set (ByVal Value As String)
+            mstrPhone1 = Value
+        End Set
+    End Property
+    Public Property Phone2() As String
+        Get
+            Return mstrPhone2
+        End Get
+        Set (ByVal Value As String)
+            mstrPhone2 = Value
+        End Set
+    End Property
+    Public Property MobilePhone() As String
+        Get
+            Return mstrMobilePhone
+        End Get
+        Set (ByVal Value As String)
+            mstrMobilePhone = Value
+        End Set
+    End Property
+    '/* Property - Friend - Readonly */
+    '/* Property - Friend - Writeonly */
+    '/* Property - Friend - Read & Write */
+    '/* Property - Protected - Readonly */
+    '/* Property - Protected - Writeonly */
+    '/* Property - Protected - Read & Write */
+    '/* Property - Private - Readonly */
+    Private ReadOnly Property ThisClassName() As String 'Default Design
+        Get
+            Return System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name
+        End Get
+    End Property
+    '/* Property - Private - Writeonly */
+    '/* Property - Private - Read & Write */
+#End Region
+
+#Region "Functions"
+    '/* Function - Public */
+    '/* Function - Friend */
+    '/* Function - Protected */
+    '/* Function - Private */
+    Private Function Initialize(ByRef InobjSolutionBO As clsSolutionBO) As Boolean'Default Design
+        On Error GoTo ErrorHandler
+    
+    '----/* Declaration - Private Object variables */----
+        '----/* Declaration - Private variables */----
+        Dim ExecutionComplete As Boolean
+        Dim ThisFunctionName As String = System.Reflection.MethodInfo.GetCurrentMethod().Name 
+
+        '----/* Initialize - Variables */----
+    '--Local Variables
+        ExecutionComplete = False
+        Initialize = False
+
+    '--Parameters
+    
+    '----/* Functionality  - Start */----
+        mobjSolutionBO = InobjSolutionBO
+
+        ExecutionComplete = True
+        '----/* Functionality  - End */----
+        '----/* Close - Variables */----
+    ExitFunction:
+
+        '----/* Return Execution Status */----
+        If ExecutionComplete = True Then Initialize = True
+        Exit Function
+    
+    ErrorHandler:
+        GenericErrorHandler(Err, ThisClassName, ThisFunctionName)
+        Goto ExitFunction
+
+    End Function
+    Private Function Terminate() As Boolean'Default Design
+        On Error GoTo ErrorHandler
+    
+    '----/* Declaration - Private Object variables */----
+        '----/* Declaration - Private variables */----
+        Dim ExecutionComplete As Boolean
+        Dim ThisFunctionName As String = System.Reflection.MethodInfo.GetCurrentMethod().Name 
+
+        '----/* Initialize - Variables */----
+    '--Local Variables
+        ExecutionComplete = False
+        Terminate = False
+
+    '--Parameters
+    
+    '----/* Functionality  - Start */----
+        mobjSolutionBO = Nothing
+
+        ExecutionComplete = True
+        '----/* Functionality  - End */----
+        '----/* Close - Variables */----
+    ExitFunction:
+
+        '----/* Return Execution Status */----
+        If ExecutionComplete = True Then Terminate = True
+        Exit Function
+    
+    ErrorHandler:
+        GenericErrorHandler(Err, ThisClassName, ThisFunctionName)
+        Goto ExitFunction
+
+    End Function
+#End Region
+
+#Region "Procedures"
+    '/* Procedure - Public */
+    '/* Procedure - Friend */
+    '/* Procedure - Protected */
+    '/* Procedure - Private */
+#End Region
+
+#Region "Events"
+    '/* Event */
+#End Region
+
+#Region "Event Functions"
+    '/* Event Function - Public */
+    '/* Event Function - Friend */
+    '/* Event Function - Protected */
+    '/* Event Function - Private */
+#End Region
+
+#Region "BR Functions"
+    '/* BR Function */
+#End Region
+
+#Region "SourceCode - ToRemove"
+#End Region
+
+#Region "SourceCode - ToTest"
+#End Region
+
+End Class
