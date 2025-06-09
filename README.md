@@ -102,9 +102,7 @@ _(Program not definitive!)_
 | 11/15/2024 | Dense Passage Retrieval  |  | [video](https://youtu.be/xY010hbBnG4?si=nHE9QnjEXg4yTwmj) | Mithun Paul |  
 
 ****
-Created: 06/10/2024 (C. Lizárraga)
-
-Updated: 06/09/2025 (C. Lizárraga)
+Created: 06/10/2024 (C. Lizárraga) <br> Updated: 06/09/2025 (C. Lizárraga)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/64px-Cc.logo.circle.svg.png" width=20> 2025. [University of Arizona DataLab](https://datascience.arizona.edu/education/uarizona-data-lab), [Data Science Institute](https://datascience.arizona.edu/).
 
