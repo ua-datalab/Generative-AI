@@ -1,81 +1,46 @@
 import streamlit as st
+from docx import Document
 import os
-import subprocess
-import base64
-import time
 
-# Set Streamlit page configuration
-st.set_page_config(page_title="Code Factory", page_icon="⚙️", layout="centered")
+# --- Streamlit Page Config ---
+st.set_page_config(page_title="Code Factory", page_icon="🧠", layout="centered")
 
-# Custom CSS for gradient background and animation
+# --- Title and Intro ---
 st.markdown("""
-    <style>
-    body {
-        background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-        animation: fadeIn 1.5s ease-in;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .stButton>button {
-        background-color: #4B8BBE;
-        color: white;
-        border-radius: 10px;
-        padding: 0.5em 2em;
-        font-weight: bold;
-        transition: 0.3s ease;
-    }
-    .stButton>button:hover {
-        background-color: #306998;
-        transform: scale(1.05);
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# App Title
-st.markdown("""
-    <h1 style='text-align: center; color: #222;'>
-        ⚙️ Code Factory
+    <h1 style='text-align: center; color: #4B8BBE; font-size: 50px;'>
+        🔧 Code Factory
     </h1>
-    <p style='text-align: center; font-size: 16px; color: #444;'>
-        Upload your requirements file and let the magic begin!
+    <p style='text-align: center; font-size: 18px; color: #555;'>
+        Upload your requirements file and edit it directly below!
     </p>
-    <hr style='border: 1px solid #ccc;'>
+    <hr style="border: 1px solid #bbb;">
 """, unsafe_allow_html=True)
 
-# Upload Section
+# --- File Upload ---
 st.markdown("### 📂 Upload your requirements file here:")
-uploaded_file = st.file_uploader("Choose a DOCX file", type=['docx'])
+uploaded_file = st.file_uploader("Choose a DOCX, TXT, or Markdown file", type=['docx', 'txt', 'md'])
 
-# File handling
-if uploaded_file is not None:
+# --- Helper Function to Read Files ---
+def read_file(file):
+    if file.name.endswith(".docx"):
+        doc = Document(file)
+        return "\n".join([para.text for para in doc.paragraphs])
+    elif file.name.endswith((".txt", ".md")):
+        return file.read().decode("utf-8")
+    else:
+        return ""
+
+# --- Main Display Section ---
+if uploaded_file:
+    file_contents = read_file(uploaded_file)
     st.success(f"✅ File uploaded: {uploaded_file.name}")
 
-    # Save file to temp location
-    save_path = os.path.join("temp", uploaded_file.name)
-    os.makedirs("temp", exist_ok=True)
-    with open(save_path, "wb") as f:
-        f.write(uploaded_file.read())
-    
-    st.write("📄 File saved locally as:", save_path)
+    edited_text = st.text_area("📝 Edit your document below:", value=file_contents, height=400)
 
-    # Delay for UX
-    with st.spinner("🔄 Launching VB.NET engine..."):
-        time.sleep(1)
-
-        # Run VB.NET app via dotnet
-        vbnet_path = os.path.abspath("../VbNetApp")
-        try:
-            result = subprocess.run(
-                ["dotnet", "run"],
-                cwd=vbnet_path,
-                capture_output=True,
-                text=True,
-                timeout=30
-            )
-            st.code(result.stdout, language='text')
-            if result.stderr:
-                st.error(f"⚠️ VB.NET Error:\n{result.stderr}")
-        except subprocess.TimeoutExpired:
-            st.error("⏱️ VB.NET execution timed out.")
+    # --- Save Button ---
+    if st.button("💾 Save Edited File"):
+        os.makedirs("edited", exist_ok=True)
+        output_path = os.path.join("edited", f"edited_{uploaded_file.name}")
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(edited_text)
+        st.success(f"✅ Edited file saved as: `{output_path}`")

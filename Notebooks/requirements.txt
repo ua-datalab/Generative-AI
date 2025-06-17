@@ -1,0 +1,6 @@
+streamlit
+aiohttp
+watchdog
+rsconnect-python
+posit
+python-docx
