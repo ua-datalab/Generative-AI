@@ -4,8 +4,8 @@ from pathlib import Path
 from chains.llm_proxy import build_llm_proxy
 import datetime
 
-prompt_file_name="./data/all_prompts/prompt_to_create_dictionary.txt"
-output_file_name="./outputs/dictionary_frm_clsBuyer_related_classes.vb"
+prompt_file_name="./data/all_prompts/prompt_to_find_missing_constants_from_buyer_files.txt"
+output_file_name="./outputs/dictionary_frm_clsBuyer_related_classes.txt"
 
 # dict_dynamic_business_object_names= {
 #     "{input_class_name}": "clsColors",
@@ -21,17 +21,16 @@ print(f"api_key is:{api_key}")
 llm = build_llm_proxy(
     # model="anthropic/claude-3-7-sonnet-20250219",
     # model="anthropic/claude-3-7-sonnet-latest",
-    # model ="gpt-4o",
+    model ="gpt-4o",
     # model ="gpt-4",
-    model ="gpt-4o-mini",    
+    # model ="gpt-4o-mini",    
     # model ="anvilgpt/llama3:70b",
     # model ="anvilgpt/codegemma:latest", 
     # model ="Qwen2.5-Coder-32B-Instruct", 
     # model ="anvilgpt/codegemma:latest", 
-
     url=llm_url,
     engine="OpenAI",
-    temperature=0.1,
+    temperature=0.9,
     api_key=api_key,
 )
 

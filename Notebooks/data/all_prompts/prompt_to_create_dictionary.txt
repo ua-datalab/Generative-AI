@@ -2,7 +2,7 @@ Declaration/Structure:
 
 I am pasting below six vb.net files.
 
-The first file, earmarked below with "------start of constants and definitions file---"  are some parent example constants.
+The first file, earmarked below with "------start of constants and definitions file---"  are some sample  constants.
 
 The second file, called clsBuyer, earmarked below with "---start of actual class file for clsBuyer----"  shows a class for a buyer.
 
@@ -45,14 +45,15 @@ You should refer these files in the following order while executing the command 
 - Then only use your internal pre-trained knowledge for defining anything.
 
 
-Now execute the following command: Create a SIMILAR constants file for Buyer.Note that these headers have to be there for sure for which you have to fill up values.
+Now execute the following command: Use file 1 as an example and create a SIMILAR constants which contains constants which are not buyer related. i.e agnostic to buyer
+
+
+Note that these headers have to be there for sure for which you have to fill up values. 
 
 1. `'/* Constant for CcodeTabChar */`
-2. `'    Public Const CcodeTab16 As String = CcodeTab8 & CcodeTab8`
 3. `'/* Constants for Control Name - Prefix */`
 4. `'/* Constant for Access Modifier */`
 5. `'/*Constant for SQL */`
-6. `' To review before moving into Coding Syntax library`
 7. `'/* Constant for Common code characters and words */`
 8. `'/* Functions in Application Framework */`
 9. `'/* Constant for NameSpaces */`
@@ -125,17 +126,6 @@ Now execute the following command: Create a SIMILAR constants file for Buyer.Not
 76. `'Constatnts for - Function Names`
 77. `'Syntax for - Events`
 78. `'/* Constant for Data Types - MS Access */`
-79. `'/* Constants Fields Class -  Function Calls  */`
-80. `'Syntax - Miscellaneous`
-81. `'---------------Vb Syntax - User defined Words - End --------------------------------------------------`
-82. `'---------------MSAccess Syntax - Reserver Words - Start ----------------------------------------------`
-83. `'---------------MSAccess Syntax - Reserver Words - End ----------------------------------------------`
-84. `'/* Constant for Property - Functions */`
-85. `'/* Constants for Collection Class Functions */`
-86. `'Constants - Common`
-87. `'/* Constants - Friend */`
-88. `'/* Constants - Protected */`
-89. `'/* Constants - Private */`
 
 
 
