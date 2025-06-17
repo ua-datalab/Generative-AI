@@ -4,3 +4,11 @@ watchdog
 rsconnect-python
 posit
 python-docx
+langchain
+openai
+tiktoken
+requests
+transformers
+beautifulsoup4
+python-dotenv
+chatur-chains

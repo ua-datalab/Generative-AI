@@ -1,6 +1,7 @@
 import streamlit as st
 from docx import Document
 import os
+import subprocess
 
 # --- Streamlit Page Config ---
 st.set_page_config(page_title="Code Factory", page_icon="🧠", layout="centered")
@@ -11,7 +12,7 @@ st.markdown("""
         🔧 Code Factory
     </h1>
     <p style='text-align: center; font-size: 18px; color: #555;'>
-        Upload your requirements file and edit it directly below!
+        Upload your requirements file, edit it, and create your code using AI!
     </p>
     <hr style="border: 1px solid #bbb;">
 """, unsafe_allow_html=True)
@@ -57,3 +58,25 @@ if uploaded_file:
         with open(saved_path, "w", encoding="utf-8") as f:
             f.write(edited_text)
         st.success(f"✅ Edited file saved to: `{saved_path}`")
+
+    # --- New Feature: Call miki_project.py ---
+    if st.button("🚀 Create Your Code"):
+        with st.spinner("Calling your AI engine..."):
+            try:
+                # Run the miki_project.py script
+                result = subprocess.run(
+                    ["python", "miki_project.py"],  # or use "python3" if needed
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                st.success("✅ Code generation complete!")
+                st.code(result.stdout, language='python')
+
+                if result.stderr:
+                    st.error("⚠️ Error output:")
+                    st.text(result.stderr)
+            except subprocess.TimeoutExpired:
+                st.error("⏱️ Code generation timed out.")
+            except Exception as e:
+                st.error(f"💥 Error while generating code: {str(e)}")
