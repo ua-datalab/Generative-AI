@@ -50,7 +50,7 @@ Upon completion of this eight-session workshop series, participants will be able
 
 ## Fall 2025
 
-**Instructors**:  Enrique Noriega/ Carlos Lizárraga 
+**Instructors**:  **Enrique Noriega/ Carlos Lizárraga**
 
 * [**Registration**]() to attend in person or online.
 
