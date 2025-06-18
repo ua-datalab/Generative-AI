@@ -85,7 +85,9 @@ _(Program not definitive!)_
 
 ***
 
-### Past SPRING 2025 Workshop
+# Past Workshops 
+
+## Fall 2025
 
 | Date      | Title      | Topic Description     | Wiki/Slides      | YouTube | Instructor | 
 | :--: | :-- | :--      | :--  | :--       | :--: | 
@@ -102,7 +104,7 @@ _(Program not definitive!)_
 
 ***
 
-# Fall 2024
+## Fall 2024
 
 | Date      | Title      | Topic Description         | YouTube | Instructor |  
 |:--: | :-- | :--         | :--: | :-- | 
