@@ -61,14 +61,9 @@ _(Program not definitive!)_
 |   |  **Session 3: RAG (Retrieval Augmented Generation)** 📚 | This session dives into **Retrieval Augmented Generation (RAG)** to enhance LLM responses with external, up-to-date information. It will cover the core components: **document loading and chunking**, creating **embeddings** (e.g., using Sentence Transformers), setting up a **vector store** (e.g., FAISS, ChromaDB), and the **retrieval-then-generation** pipeline. The goal is to show how RAG mitigates hallucinations and grounds LLMs in specific knowledge domains.  |  |  |  |
 |   |  **Session 4: Tool calling & SQL code generation** 🛠️ | This session covers LLM interaction with external tools and APIs. We'll explore **function calling** in GPT models, teaching participants to define tools, use them effectively, and process outputs. Examples include calculator operations and web search integration.
 We'll also cover **Text-to-SQL generation**, showing how LLMs can convert natural language to SQL queries. We'll discuss schema incorporation via RAG and handling different SQL dialects, with hands-on database practice. |  |  |  |
-<!--
-|  10/02 |  **Session 5: Text to SQL code generation** 📊 | A practical application of LLM capabilities, this session explores **Text-to-SQL generation**. It will cover techniques for prompting LLMs to convert natural language questions into SQL queries. Discussion will include the importance of providing schema information (potentially via RAG) for accuracy and how to handle different SQL dialects or complex queries. Participants might practice with sample database schemas.  |  |  |  |
--->
 |  |  **Session 6: Agentic systems** 🤖 |  This session introduces the concept of **AI agents**—systems where LLMs are a core component that can reason, plan, and execute sequences of actions to achieve goals. It will cover basic agent architectures (e.g., **ReAct: Reason + Act**), the idea of an agent loop (observe, think, act), and how agents can utilize tools. An overview of simple agent development using frameworks like LangChain Agents or a conceptual design exercise will be included.  |  |  |  |
 |   |  **Session 7: Modern Context Protocol (Claude SDK)** 📄 | This session focuses on effectively managing and utilizing context with modern LLMs, using the **Claude SDK** as a case study. It will cover best practices for structuring prompts, leveraging large context windows, and specific API features offered by Anthropic for tasks like document summarization, Q&A over long texts, and maintaining coherent conversations.  |  |  |  |
-<!--
-| 10/23  |  **Session 8: Google Firebase** 🔥 | This session explores **Google Firebase** as a Backend-as-a-Service (BaaS) to support AI and LLM-powered applications. It will highlight key Firebase services such as **Firestore/Realtime Database** for storing application data (e.g., chat histories, user profiles, RAG vector metadata) and **Cloud Functions** for deploying serverless backend logic that might interact with LLM APIs or manage data processing pipelines.  |  |  |  |
--->
+
 
 
 ***
