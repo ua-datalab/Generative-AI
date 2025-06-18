@@ -83,6 +83,48 @@ _(Program not definitive!)_
 
 ***
 
+***
+
+### Past SPRING 2025 Workshop
+
+| Date      | Title      | Topic Description     | Wiki/Slides      | YouTube | Instructor | 
+| :--: | :-- | :--      | :--  | :--       | :--: | 
+|  01/30/2025 | Scaling up Ollama: Local, CyVerse, HPC | In this hands-on workshop, participants will learn to deploy and scale large language models using Ollama across various computational environments—from laptops to supercomputing clusters—to master practical AI capabilities. | | [video](https://youtu.be/SuLc1bk3994?si=hc2tmI-L8ScnL-Eg)  | Enrique Noriega|
+| 02/06/2025 | Using AI Verde  | This practical introduction shows how to effectively use U of A Generative AI Verde for academic research, writing, and problem-solving. Participants will learn to harness AI Verde's capabilities while gaining a clear understanding of its limitations and ethical implications. | | [video](https://youtu.be/M9Vos5LiwUo?si=8IBW006F7XNnA_gi)   | Nick Eddy |
+|  02/13/2025| Best practices of Prompt Engineering using AI Verde | A hands-on session that teaches practical prompt engineering techniques to optimize U of A Generative AI Verde's performance for academic and professional applications. | [Slides](https://docs.google.com/presentation/d/1zx_6tRUo5m9Yz2nDOAg54di3bhHuW9KVx_7MQFI4yoE/edit?usp=sharing)  | [video](https://youtu.be/pVHeHTTNekY?si=ZxM4UAZq6ncIVtkZ) |Mithun Paul |
+| 02/20/2025 | Quick RAG application using AI Verde / HPC | A hands-on session demonstrating how to build a basic Retrieval-Augmented Generation (RAG) system with the U of A Generative AI Verde API. Participants will learn to enhance AI responses by integrating custom knowledge bases. | [Slides](https://docs.google.com/presentation/d/1gMcJ348LLNRXgsXpFikIV_Fj-Cp5UMADzPOB_JJqdhA/edit?usp=sharing) | [video](https://youtu.be/Lwmhiwr4vwY?si=0nge273oFmW2eeQO) | Mithun Paul| 
+| 02/27/2025 |  Multimodal Q&A+OCR in AI Verde | A hands-on technical session exploring U of A Generative AI's multimodal capabilities that combines vision and text processing for enhanced document analysis and automated question-answering with OCR technology. | | [video](https://youtu.be/GdzIn5FanFc?si=1C77kkR_53pSpUQY) | Nick Eddy  |
+| 03/06/2025 | SQL specialized query code generation |  A hands-on session teaching participants how to use Large Language Models to craft, optimize, and validate complex SQL queries, emphasizing real-world database operations and industry best practices. | [Slides](https://docs.google.com/presentation/d/1JK48gWwOF-B2rIP77V0KcPAaKgvK4RADO1Xvn1Gv29k/edit?usp=sharing), [Code](https://github.com/enoriega/pmc-llm-index) | [video]() | Enrique Noriega |
+| 03/13/2025  | **NO Session** | **Spring Break** | | |
+| 03/20/2025 | Function calling with LLMs | There are two ways to implement function calling with open-source large language models (LLMs). When an LLM doesn't natively support function calling, you can combine prompt engineering, fine-tuning, and constrained decoding. | | [video]() | Enrique Noriega | 
+| 03/27/2025 | Code generation assistants |  Large Language Models (LLMs) now serve as powerful code generation assistants, streamlining and enhancing software development. They generate code snippets, propose solutions, and translate code between programming languages.| | [video]() | Nick Eddy  | 
+
+
+***
+
+# Fall 2024
+
+| Date      | Title      | Topic Description         | YouTube | Instructor |  
+|:--: | :-- | :--         | :--: | :-- | 
+| 09/05/2024 | [Hugging Face Models (NLP)](https://github.com/ua-datalab/Generative-AI/wiki/NLP-with-Hugging-Face-Transformers) | Hugging Face offers a vast array of pre-trained models for Natural Language Processing (NLP) tasks. These models cover a wide spectrum of applications, from text generation and translation to sentiment analysis and question answering. |[video](https://youtu.be/IJn9r6pJykw?si=3pOob4Iwnucjp50Y)  |  Enrique Noriega|
+| 09/12/2024 | [Hugging Face Models (Computer Vision)](https://github.com/ua-datalab/Generative-AI/wiki/Computer-Vision-with-Hugging-Face-Transformers)| Hugging Face has significantly expanded its offerings beyond NLP to encompass a robust collection of computer vision models. You can find pre-trained models for a wide range of tasks, from basic image classification to complex image generation.  | [video](https://youtu.be/uNXeV-uQdOo?si=Lqn-FYXEb700cP6q)  | Enrique Noriega |
+| 09/19/2024  | [Hugging Face Models (Multimodal)](https://github.com/ua-datalab/Generative-AI/wiki/Multimodal-LLM-with-Hugging-Face-Transformers)|  Hugging Face offers a diverse range of multimodal models, capable of processing and understanding multiple data modalities such as text, images, and audio. These models are at the forefront of AI research and development, enabling innovative applications.  | [video](https://youtu.be/99Nb6XLOwqE?si=M-L0-tSlQRD6wmPE)  | Enrique Noriega  |
+| 09/26/2024  | [Running LLM locally: Ollama](https://github.com/ua-datalab/Generative-AI/wiki/Running-LLM-Locally:-Ollama)  | Ollama is an open-source platform designed to make running large language models (LLMs) on your local machine accessible and efficient. It acts as a bridge between the complex world of LLMs and users who want to experiment and interact with these models without relying on cloud-based services.  | [video](https://youtu.be/Ywi57myR-Q8?si=F5_T0cxOQQIoconA)  | Carlos Lizárraga|
+| 10/03/2024  |  [Introduction to LangChain](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-Langchain) | Langchain is an open-source Python library that provides a framework for developing applications powered by large language models (LLMs). It simplifies the process of building complex LLM-based applications by offering tools and abstractions to connect LLMs with other data sources and systems. | [video](https://youtu.be/EWOJwNoeIa0?si=VV3OpSzekEUqj6EN)  | Enrique Noriega |
+| 10/10/2024  | [Getting Started with Phi-3](https://github.com/ua-datalab/Generative-AI/wiki/Getting-started-with-Phi%E2%80%903) | Phi-3 is a series of small language models (SLMs) developed by Microsoft. Unlike larger language models (LLMs) that require substantial computational resources, Phi-3 models offer impressive performance while being significantly smaller and more efficient.| [video](https://youtu.be/lo8Zdytfx9I?si=WUYZff5Dl5S2j5C_)  |  Enrique Noriega |
+| 10/17/2024 | [Getting started with Gemini](https://github.com/ua-datalab/Generative-AI/wiki/Getting-started-with-Gemini)  | Gemini is a large language model (LLM) developed by Google AI. It's designed to be exceptionally versatile, capable of handling a wide range of tasks and modalities, including text, code, audio, and images. This makes it a significant advancement in the field of artificial intelligence. | [video](https://youtu.be/kVP7hI5PxX0?si=99ZbPvRzuum4WWhG)  | Enrique Noriega |
+| 10/24/2024 | [Introduction to Gradio](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-Gradio) | Gradio is an open-source Python library that allows you to quickly create user interfaces for your machine learning models, APIs, or any Python function. It simplifies the process of building interactive demos and web applications without requiring extensive knowledge of JavaScript, CSS, or web development.| [video](https://youtu.be/JHIKpScQcg8?si=MF4KTeBoOFgbYvKg)  | Enrique Noriega |
+| 10/31/2024 | [Introduction to RAG](https://github.com/ua-datalab/Generative-AI/wiki/Introduction-to-RAG) | Retrieval-Augmented Generation. It's a technique that enhances the capabilities of Large Language Models (LLMs) by combining them with external knowledge sources.  | [video](https://youtu.be/5pnl0Y64JFQ?si=MmGsD8gTKQfKlzF5)  | Enrique Noriega |
+| 11/15/2024 | Dense Passage Retrieval  |  | [video](https://youtu.be/xY010hbBnG4?si=nHE9QnjEXg4yTwmj) | Mithun Paul |  
+
+****
+Created: 06/10/2024 (C. Lizárraga) <br> Updated: 06/18/2025 (C. Lizárraga)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/64px-Cc.logo.circle.svg.png" width=20> 2025. [University of Arizona DataLab](https://datascience.arizona.edu/education/uarizona-data-lab), [Data Science Institute](https://datascience.arizona.edu/).
+
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128"></a>
+
+[<img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29.svg" width="256">](https://datascience.arizona.edu)
 
 
  
