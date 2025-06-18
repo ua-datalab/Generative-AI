@@ -13,13 +13,12 @@ The workshop begins with architectural fundamentals, covering Perceptrons, Neura
 
 The series then moves to practical modern AI deployment, teaching participants how to run Large Language Models locally using tools like Ollama and LM Studio, and access open-source models through platforms like AI VERDE. Advanced applications include implementing Retrieval Augmented Generation (RAG) systems to enhance factual accuracy and reduce hallucinations (Lewis et al., 2020), tool calling mechanisms for external API integration, and text-to-SQL code generation.
 
-The workshop culminates with agentic systems, where LLMs perform multi-step reasoning, planning, and task execution. Participants will explore emerging standards, including Anthropic's Claude SDK for context management and Google Firebase for AI application data integration.
+The workshop culminates with agentic systems, where LLMs perform multi-step reasoning, planning, and task execution. 
 
 Throughout the series, real-world applications spanning drug discovery, medical imaging, climate science, robotics, and creative arts demonstrate AI's broad impact. The workshop addresses ethical considerations and societal implications to foster responsible AI development. By emphasizing both theoretical understanding and practical implementation through popular open-source frameworks, participants will gain the skills to deploy, customize, and extend modern AI systems in their research domains.
 
 **References for Overview:**
 
-* Anthropic. (Various documentation on [Claude SDK](https://docs.anthropic.com/en/docs/claude-code/sdk) and context management). (Specific SDK documentation provides context for modern LLM interaction).
 * Goodfellow, I., Bengio, Y., & Courville, A. (2016). [Deep Learning](https://www.deeplearningbook.org/). MIT Press. (A foundational textbook in deep learning).
 * Ho, J., Jain, A., & Abbeel, P. (2020). [Denoising diffusion probabilistic models. Advances in Neural Information Processing Systems](https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf), 33, 6840-6851. (A key paper on diffusion models).
 * LeCun, Y., Bengio, Y., & Hinton, G. (2015). [Deep learning. Nature, 521(7553), 436-444](https://www.nature.com/articles/nature14539.pdf). (A high-level overview of deep learning by pioneers in the field).
@@ -79,7 +78,9 @@ _(Program not definitive!)_
 | 10/21  | **Session 9: RNN (Recurrent Neural Networks)** 🔄 |  This session focuses on **Recurrent Neural Networks (RNNs)**, designed to handle sequential data like text and time series. It will explain the concept of a **hidden state** that allows RNNs to have "memory," the challenges of training RNNs (vanishing/exploding gradients), and how variants like **LSTMs (Long Short-Term Memory)** and **GRUs (Gated Recurrent Units)** address these issues through gating mechanisms.  | [Notes](https://github.com/ua-datalab/MLWorkshops/wiki/Recurrent-Neural-Networks) | [Code](https://github.com/ua-datalab/MLWorkshops/blob/main/RNN/pytorch_char_rnn_classification_tutorial.ipynb) | Video() | 
 | 10/28 |  **Session 10: Agentic systems** 🤖 |  This session introduces the concept of **AI agents**—systems where LLMs are a core component that can reason, plan, and execute sequences of actions to achieve goals. It will cover basic agent architectures (e.g., **ReAct: Reason + Act**), the idea of an agent loop (observe, think, act), and how agents can utilize tools. An overview of simple agent development using frameworks like LangChain Agents or a conceptual design exercise will be included.  |  |  |  |
 |  11/04 |  **Session 11: Transformers** 💡 |  Here we explore **Transformers**, this session will introduce the revolutionary "Attention is All You Need" concept. It will break down the **self-attention mechanism** (queries, keys, values), **Multi-Head Attention**, and the necessity of **positional encoding**. The discussion will focus on how attention allows models to weigh the importance of different parts of the input sequence, overcoming limitations of RNNs.  | [Notes]() | [Code]() | Video() | 
+<!--
 |   |  **Session 12: Modern Context Protocol (Claude SDK)** 📄 | This session focuses on effectively managing and utilizing context with modern LLMs, using the **Claude SDK** as a case study. It will cover best practices for structuring prompts, leveraging large context windows, and specific API features offered by Anthropic for tasks like document summarization, Q&A over long texts, and maintaining coherent conversations.  |  |  |  |
+-->
 
 ***
 
