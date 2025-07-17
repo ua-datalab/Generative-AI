@@ -1,16 +1,17 @@
 
-## Applications of Autonomous AI Agents
+## Autonomous AI Systems: From Local Deployment to Agentic Applications
 <img src="https://images.unsplash.com/photo-1671001803647-07e1bbb287b2?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width=840>
 
 (Image credit: [Sufyan @blenderdesigner](https://unsplash.com/@blenderdesigner). Unsplash.com)
 ***
 ### Topic Overview
 
-This five-session workshop offers practical training in modern AI deployment, teaching participants how to run Large Language Models locally using tools like Ollama and LM Studio, and access open-source models through platforms like AI VERDE. Participants will learn advanced applications including Retrieval Augmented Generation (RAG) systems to improve factual accuracy and reduce hallucinations (Lewis et al., 2020), tool calling mechanisms for external API integration, and text-to-SQL code generation.
+This five-session workshop provides comprehensive training in contemporary AI deployment methodologies, instructing participants in local Large Language Model execution using frameworks such as Ollama and LM Studio, while facilitating access to open-source models through platforms like AI VERDE. The curriculum encompasses advanced implementation strategies including Retrieval Augmented Generation (RAG) systems for enhanced factual accuracy and hallucination mitigation (Lewis et al., 2020), tool calling architectures for external API integration, and automated text-to-SQL code generation.
 
-The workshop culminates with agentic systems, where LLMs perform multi-step reasoning, planning, and task execution.
+Supplemental methodologies include **AI-assisted coding techniques**, which leverage language models for code completion, debugging, and optimization workflows, enabling accelerated development cycles and improved code quality. Additionally, participants will explore **vibe coding approaches**—an emergent paradigm emphasizing intuitive, conversational programming interfaces that facilitate rapid prototyping and iterative development through natural language specifications.
 
-Throughout the series, diverse real-world applications in drug discovery, medical imaging, climate science, robotics, and creative arts demonstrate AI's broad impact. The workshop covers ethical considerations and societal implications to promote responsible AI development. By balancing theoretical understanding with hands-on implementation through popular open-source frameworks, participants will develop the skills to deploy, customize, and extend modern AI systems in their research domains.
+The workshop culminates with comprehensive training in **agentic systems architecture**, where LLMs demonstrate autonomous multi-step reasoning capabilities, strategic planning algorithms, and complex task execution pipelines. These systems represent the current frontier in artificial intelligence applications, enabling sophisticated problem-solving through iterative agent-environment interactions and goal-oriented behavior optimization.
+
 
 <!--
 * Goodfellow, I., Bengio, Y., & Courville, A. (2016). [Deep Learning](https://www.deeplearningbook.org/). MIT Press. (A foundational textbook in deep learning).
